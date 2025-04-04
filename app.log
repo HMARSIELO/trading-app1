@@ -1,0 +1,638 @@
+2025-04-01 12:48:33 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 12:48:33 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-01 12:48:33 - INFO - Scheduler started
+2025-04-01 12:49:33 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 12:49:33 CAT)" (scheduled at 2025-04-01 12:49:33.173263+02:00)
+2025-04-01 12:49:56 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 12:50:33 CAT)" executed successfully
+2025-04-01 12:50:33 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 12:51:33 CAT)" (scheduled at 2025-04-01 12:50:33.173263+02:00)
+2025-04-01 12:51:31 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 12:51:33 CAT)" executed successfully
+2025-04-01 12:51:33 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 12:52:33 CAT)" (scheduled at 2025-04-01 12:51:33.173263+02:00)
+2025-04-01 12:51:43 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 12:52:33 CAT)" executed successfully
+2025-04-01 12:59:03 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 12:59:03 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-01 12:59:03 - INFO - Scheduler started
+2025-04-01 13:00:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:00:03 CAT)" (scheduled at 2025-04-01 13:00:03.371479+02:00)
+2025-04-01 13:00:17 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:01:03 CAT)" executed successfully
+2025-04-01 13:01:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:02:03 CAT)" (scheduled at 2025-04-01 13:01:03.371479+02:00)
+2025-04-01 13:01:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:02:03 CAT)" executed successfully
+2025-04-01 13:02:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:03:03 CAT)" (scheduled at 2025-04-01 13:02:03.371479+02:00)
+2025-04-01 13:02:41 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:03:03 CAT)" executed successfully
+2025-04-01 13:03:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:04:03 CAT)" (scheduled at 2025-04-01 13:03:03.371479+02:00)
+2025-04-01 13:03:23 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:04:03 CAT)" executed successfully
+2025-04-01 13:04:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:05:03 CAT)" (scheduled at 2025-04-01 13:04:03.371479+02:00)
+2025-04-01 13:04:26 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:05:03 CAT)" executed successfully
+2025-04-01 13:05:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:06:03 CAT)" (scheduled at 2025-04-01 13:05:03.371479+02:00)
+2025-04-01 13:06:03 - WARNING - Execution of job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:06:03 CAT)" skipped: maximum number of running instances reached (1)
+2025-04-01 13:06:08 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:07:03 CAT)" executed successfully
+2025-04-01 13:07:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:08:03 CAT)" (scheduled at 2025-04-01 13:07:03.371479+02:00)
+2025-04-01 13:07:25 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:08:03 CAT)" executed successfully
+2025-04-01 13:08:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:09:03 CAT)" (scheduled at 2025-04-01 13:08:03.371479+02:00)
+2025-04-01 13:08:23 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:09:03 CAT)" executed successfully
+2025-04-01 13:09:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:10:03 CAT)" (scheduled at 2025-04-01 13:09:03.371479+02:00)
+2025-04-01 13:09:08 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:10:03 CAT)" executed successfully
+2025-04-01 13:10:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:11:03 CAT)" (scheduled at 2025-04-01 13:10:03.371479+02:00)
+2025-04-01 13:11:03 - WARNING - Execution of job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:11:03 CAT)" skipped: maximum number of running instances reached (1)
+2025-04-01 13:11:08 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:12:03 CAT)" executed successfully
+2025-04-01 13:12:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:13:03 CAT)" (scheduled at 2025-04-01 13:12:03.371479+02:00)
+2025-04-01 13:12:16 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:13:03 CAT)" executed successfully
+2025-04-01 13:13:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:14:03 CAT)" (scheduled at 2025-04-01 13:13:03.371479+02:00)
+2025-04-01 13:14:03 - WARNING - Execution of job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:14:03 CAT)" skipped: maximum number of running instances reached (1)
+2025-04-01 13:14:04 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:15:03 CAT)" executed successfully
+2025-04-01 13:15:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:16:03 CAT)" (scheduled at 2025-04-01 13:15:03.371479+02:00)
+2025-04-01 13:16:00 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:16:03 CAT)" executed successfully
+2025-04-01 13:16:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:17:03 CAT)" (scheduled at 2025-04-01 13:16:03.371479+02:00)
+2025-04-01 13:16:03 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:17:03 CAT)" executed successfully
+2025-04-01 13:17:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:18:03 CAT)" (scheduled at 2025-04-01 13:17:03.371479+02:00)
+2025-04-01 13:17:44 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:18:03 CAT)" executed successfully
+2025-04-01 13:18:03 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 13:19:03 CAT)" (scheduled at 2025-04-01 13:18:03.371479+02:00)
+2025-04-01 14:08:23 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 14:08:23 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-01 14:08:23 - INFO - Scheduler started
+2025-04-01 14:09:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:09:23 CAT)" (scheduled at 2025-04-01 14:09:23.839054+02:00)
+2025-04-01 14:10:22 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:10:23 CAT)" executed successfully
+2025-04-01 14:10:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:11:23 CAT)" (scheduled at 2025-04-01 14:10:23.839054+02:00)
+2025-04-01 14:11:23 - WARNING - Execution of job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:11:23 CAT)" skipped: maximum number of running instances reached (1)
+2025-04-01 14:11:28 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:12:23 CAT)" executed successfully
+2025-04-01 14:12:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:13:23 CAT)" (scheduled at 2025-04-01 14:12:23.839054+02:00)
+2025-04-01 14:12:27 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:13:23 CAT)" executed successfully
+2025-04-01 14:13:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:14:23 CAT)" (scheduled at 2025-04-01 14:13:23.839054+02:00)
+2025-04-01 14:13:38 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:14:23 CAT)" executed successfully
+2025-04-01 14:14:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:15:23 CAT)" (scheduled at 2025-04-01 14:14:23.839054+02:00)
+2025-04-01 14:14:30 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:15:23 CAT)" executed successfully
+2025-04-01 14:15:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:16:23 CAT)" (scheduled at 2025-04-01 14:15:23.839054+02:00)
+2025-04-01 14:15:29 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:16:23 CAT)" executed successfully
+2025-04-01 14:16:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:17:23 CAT)" (scheduled at 2025-04-01 14:16:23.839054+02:00)
+2025-04-01 14:16:29 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:17:23 CAT)" executed successfully
+2025-04-01 14:17:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:18:23 CAT)" (scheduled at 2025-04-01 14:17:23.839054+02:00)
+2025-04-01 14:17:43 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:18:23 CAT)" executed successfully
+2025-04-01 14:18:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:19:23 CAT)" (scheduled at 2025-04-01 14:18:23.839054+02:00)
+2025-04-01 14:18:31 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:19:23 CAT)" executed successfully
+2025-04-01 14:19:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:20:23 CAT)" (scheduled at 2025-04-01 14:19:23.839054+02:00)
+2025-04-01 14:19:29 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:20:23 CAT)" executed successfully
+2025-04-01 14:20:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:21:23 CAT)" (scheduled at 2025-04-01 14:20:23.839054+02:00)
+2025-04-01 14:20:34 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:21:23 CAT)" executed successfully
+2025-04-01 14:21:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:22:23 CAT)" (scheduled at 2025-04-01 14:21:23.839054+02:00)
+2025-04-01 14:21:38 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:22:23 CAT)" executed successfully
+2025-04-01 14:22:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:23:23 CAT)" (scheduled at 2025-04-01 14:22:23.839054+02:00)
+2025-04-01 14:22:34 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:23:23 CAT)" executed successfully
+2025-04-01 14:23:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:24:23 CAT)" (scheduled at 2025-04-01 14:23:23.839054+02:00)
+2025-04-01 14:24:10 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:24:23 CAT)" executed successfully
+2025-04-01 14:24:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:25:23 CAT)" (scheduled at 2025-04-01 14:24:23.839054+02:00)
+2025-04-01 14:25:08 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:25:23 CAT)" executed successfully
+2025-04-01 14:25:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:26:23 CAT)" (scheduled at 2025-04-01 14:25:23.839054+02:00)
+2025-04-01 14:25:49 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:26:23 CAT)" executed successfully
+2025-04-01 14:26:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:27:23 CAT)" (scheduled at 2025-04-01 14:26:23.839054+02:00)
+2025-04-01 14:26:54 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:27:23 CAT)" executed successfully
+2025-04-01 14:27:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:28:23 CAT)" (scheduled at 2025-04-01 14:27:23.839054+02:00)
+2025-04-01 14:27:35 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 14:28:23 CAT)" executed successfully
+2025-04-01 17:07:41 - WARNING - Run time of job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:08:23 CAT)" was missed by 0:00:17.845134
+2025-04-01 17:08:23 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:09:23 CAT)" (scheduled at 2025-04-01 17:08:23.839054+02:00)
+2025-04-01 17:08:23 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:09:23 CAT)" executed successfully
+2025-04-01 17:14:51 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 17:14:51 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-01 17:14:51 - INFO - Scheduler started
+2025-04-01 17:15:51 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:15:51 CAT)" (scheduled at 2025-04-01 17:15:51.900153+02:00)
+2025-04-01 17:15:54 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:16:51 CAT)" executed successfully
+2025-04-01 17:16:51 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:17:51 CAT)" (scheduled at 2025-04-01 17:16:51.900153+02:00)
+2025-04-01 17:16:55 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:17:51 CAT)" executed successfully
+2025-04-01 17:17:51 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:18:51 CAT)" (scheduled at 2025-04-01 17:17:51.900153+02:00)
+2025-04-01 17:17:54 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:18:51 CAT)" executed successfully
+2025-04-01 17:18:51 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:19:51 CAT)" (scheduled at 2025-04-01 17:18:51.900153+02:00)
+2025-04-01 17:18:55 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:19:51 CAT)" executed successfully
+2025-04-01 17:19:51 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:20:51 CAT)" (scheduled at 2025-04-01 17:19:51.900153+02:00)
+2025-04-01 17:19:54 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:20:51 CAT)" executed successfully
+2025-04-01 17:20:51 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:21:51 CAT)" (scheduled at 2025-04-01 17:20:51.900153+02:00)
+2025-04-01 17:20:54 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 17:21:51 CAT)" executed successfully
+2025-04-01 23:00:10 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 23:00:10 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-01 23:00:10 - INFO - Scheduler started
+2025-04-01 23:01:10 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 23:01:10 CAT)" (scheduled at 2025-04-01 23:01:10.220705+02:00)
+2025-04-01 23:01:12 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-01 23:02:10 CAT)" executed successfully
+2025-04-02 09:45:16 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-02 09:45:16 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-02 09:45:16 - INFO - Scheduler started
+2025-04-02 09:46:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:46:16 CAT)" (scheduled at 2025-04-02 09:46:16.776874+02:00)
+2025-04-02 09:46:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:47:16 CAT)" executed successfully
+2025-04-02 09:47:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:48:16 CAT)" (scheduled at 2025-04-02 09:47:16.776874+02:00)
+2025-04-02 09:47:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:48:16 CAT)" executed successfully
+2025-04-02 09:48:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:49:16 CAT)" (scheduled at 2025-04-02 09:48:16.776874+02:00)
+2025-04-02 09:48:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:49:16 CAT)" executed successfully
+2025-04-02 09:49:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:50:16 CAT)" (scheduled at 2025-04-02 09:49:16.776874+02:00)
+2025-04-02 09:49:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:50:16 CAT)" executed successfully
+2025-04-02 09:50:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:51:16 CAT)" (scheduled at 2025-04-02 09:50:16.776874+02:00)
+2025-04-02 09:50:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:51:16 CAT)" executed successfully
+2025-04-02 09:51:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:52:16 CAT)" (scheduled at 2025-04-02 09:51:16.776874+02:00)
+2025-04-02 09:51:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:52:16 CAT)" executed successfully
+2025-04-02 09:52:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:53:16 CAT)" (scheduled at 2025-04-02 09:52:16.776874+02:00)
+2025-04-02 09:52:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:53:16 CAT)" executed successfully
+2025-04-02 09:53:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:54:16 CAT)" (scheduled at 2025-04-02 09:53:16.776874+02:00)
+2025-04-02 09:53:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:54:16 CAT)" executed successfully
+2025-04-02 09:54:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:55:16 CAT)" (scheduled at 2025-04-02 09:54:16.776874+02:00)
+2025-04-02 09:54:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:55:16 CAT)" executed successfully
+2025-04-02 09:55:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:56:16 CAT)" (scheduled at 2025-04-02 09:55:16.776874+02:00)
+2025-04-02 09:55:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:56:16 CAT)" executed successfully
+2025-04-02 09:56:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:57:16 CAT)" (scheduled at 2025-04-02 09:56:16.776874+02:00)
+2025-04-02 09:56:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:57:16 CAT)" executed successfully
+2025-04-02 09:57:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:58:16 CAT)" (scheduled at 2025-04-02 09:57:16.776874+02:00)
+2025-04-02 09:57:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:58:16 CAT)" executed successfully
+2025-04-02 09:58:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:59:16 CAT)" (scheduled at 2025-04-02 09:58:16.776874+02:00)
+2025-04-02 09:58:22 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 09:59:16 CAT)" executed successfully
+2025-04-02 09:59:16 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:00:16 CAT)" (scheduled at 2025-04-02 09:59:16.776874+02:00)
+2025-04-02 09:59:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:00:16 CAT)" executed successfully
+2025-04-02 10:00:21 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-02 10:00:21 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-02 10:00:21 - INFO - Scheduler started
+2025-04-02 10:01:15 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-02 10:01:15 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-02 10:01:15 - INFO - Scheduler started
+2025-04-02 10:02:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:02:15 CAT)" (scheduled at 2025-04-02 10:02:15.320071+02:00)
+2025-04-02 10:02:22 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:03:15 CAT)" executed successfully
+2025-04-02 10:03:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:04:15 CAT)" (scheduled at 2025-04-02 10:03:15.320071+02:00)
+2025-04-02 10:03:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:04:15 CAT)" executed successfully
+2025-04-02 10:04:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:05:15 CAT)" (scheduled at 2025-04-02 10:04:15.320071+02:00)
+2025-04-02 10:04:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:05:15 CAT)" executed successfully
+2025-04-02 10:05:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:06:15 CAT)" (scheduled at 2025-04-02 10:05:15.320071+02:00)
+2025-04-02 10:05:22 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:06:15 CAT)" executed successfully
+2025-04-02 10:06:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:07:15 CAT)" (scheduled at 2025-04-02 10:06:15.320071+02:00)
+2025-04-02 10:06:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:07:15 CAT)" executed successfully
+2025-04-02 10:07:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:08:15 CAT)" (scheduled at 2025-04-02 10:07:15.320071+02:00)
+2025-04-02 10:07:22 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:08:15 CAT)" executed successfully
+2025-04-02 10:08:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:09:15 CAT)" (scheduled at 2025-04-02 10:08:15.320071+02:00)
+2025-04-02 10:08:22 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:09:15 CAT)" executed successfully
+2025-04-02 10:09:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:10:15 CAT)" (scheduled at 2025-04-02 10:09:15.320071+02:00)
+2025-04-02 10:09:22 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:10:15 CAT)" executed successfully
+2025-04-02 10:10:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:11:15 CAT)" (scheduled at 2025-04-02 10:10:15.320071+02:00)
+2025-04-02 10:10:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:11:15 CAT)" executed successfully
+2025-04-02 10:11:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:12:15 CAT)" (scheduled at 2025-04-02 10:11:15.320071+02:00)
+2025-04-02 10:11:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:12:15 CAT)" executed successfully
+2025-04-02 10:12:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:13:15 CAT)" (scheduled at 2025-04-02 10:12:15.320071+02:00)
+2025-04-02 10:12:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:13:15 CAT)" executed successfully
+2025-04-02 10:13:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:14:15 CAT)" (scheduled at 2025-04-02 10:13:15.320071+02:00)
+2025-04-02 10:13:23 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:14:15 CAT)" executed successfully
+2025-04-02 10:14:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:15:15 CAT)" (scheduled at 2025-04-02 10:14:15.320071+02:00)
+2025-04-02 10:14:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:15:15 CAT)" executed successfully
+2025-04-02 10:15:15 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:16:15 CAT)" (scheduled at 2025-04-02 10:15:15.320071+02:00)
+2025-04-02 10:15:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:16:15 CAT)" executed successfully
+2025-04-02 10:15:43 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-02 10:15:43 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-02 10:15:43 - INFO - Scheduler started
+2025-04-02 10:16:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:16:43 CAT)" (scheduled at 2025-04-02 10:16:43.178393+02:00)
+2025-04-02 10:16:49 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:17:43 CAT)" executed successfully
+2025-04-02 10:17:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:18:43 CAT)" (scheduled at 2025-04-02 10:17:43.178393+02:00)
+2025-04-02 10:17:49 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 10:18:43 CAT)" executed successfully
+2025-04-02 10:19:51 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-02 10:19:51 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-02 10:19:51 - INFO - Scheduler started
+2025-04-02 22:00:43 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-02 22:00:43 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-02 22:00:43 - INFO - Scheduler started
+2025-04-02 22:01:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:01:43 CAT)" (scheduled at 2025-04-02 22:01:43.789067+02:00)
+2025-04-02 22:02:29 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:02:43 CAT)" executed successfully
+2025-04-02 22:02:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:03:43 CAT)" (scheduled at 2025-04-02 22:02:43.789067+02:00)
+2025-04-02 22:02:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:03:43 CAT)" executed successfully
+2025-04-02 22:03:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:04:43 CAT)" (scheduled at 2025-04-02 22:03:43.789067+02:00)
+2025-04-02 22:03:50 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:04:43 CAT)" executed successfully
+2025-04-02 22:04:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:05:43 CAT)" (scheduled at 2025-04-02 22:04:43.789067+02:00)
+2025-04-02 22:04:57 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:05:43 CAT)" executed successfully
+2025-04-02 22:05:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:06:43 CAT)" (scheduled at 2025-04-02 22:05:43.789067+02:00)
+2025-04-02 22:05:52 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:06:43 CAT)" executed successfully
+2025-04-02 22:06:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:07:43 CAT)" (scheduled at 2025-04-02 22:06:43.789067+02:00)
+2025-04-02 22:06:52 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:07:43 CAT)" executed successfully
+2025-04-02 22:07:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:08:43 CAT)" (scheduled at 2025-04-02 22:07:43.789067+02:00)
+2025-04-02 22:07:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:08:43 CAT)" executed successfully
+2025-04-02 22:08:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:09:43 CAT)" (scheduled at 2025-04-02 22:08:43.789067+02:00)
+2025-04-02 22:08:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:09:43 CAT)" executed successfully
+2025-04-02 22:09:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:10:43 CAT)" (scheduled at 2025-04-02 22:09:43.789067+02:00)
+2025-04-02 22:09:50 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:10:43 CAT)" executed successfully
+2025-04-02 22:10:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:11:43 CAT)" (scheduled at 2025-04-02 22:10:43.789067+02:00)
+2025-04-02 22:10:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:11:43 CAT)" executed successfully
+2025-04-02 22:11:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:12:43 CAT)" (scheduled at 2025-04-02 22:11:43.789067+02:00)
+2025-04-02 22:11:52 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:12:43 CAT)" executed successfully
+2025-04-02 22:12:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:13:43 CAT)" (scheduled at 2025-04-02 22:12:43.789067+02:00)
+2025-04-02 22:12:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:13:43 CAT)" executed successfully
+2025-04-02 22:13:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:14:43 CAT)" (scheduled at 2025-04-02 22:13:43.789067+02:00)
+2025-04-02 22:13:49 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:14:43 CAT)" executed successfully
+2025-04-02 22:14:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:15:43 CAT)" (scheduled at 2025-04-02 22:14:43.789067+02:00)
+2025-04-02 22:14:50 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:15:43 CAT)" executed successfully
+2025-04-02 22:15:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:16:43 CAT)" (scheduled at 2025-04-02 22:15:43.789067+02:00)
+2025-04-02 22:15:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:16:43 CAT)" executed successfully
+2025-04-02 22:16:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:17:43 CAT)" (scheduled at 2025-04-02 22:16:43.789067+02:00)
+2025-04-02 22:16:50 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:17:43 CAT)" executed successfully
+2025-04-02 22:17:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:18:43 CAT)" (scheduled at 2025-04-02 22:17:43.789067+02:00)
+2025-04-02 22:17:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:18:43 CAT)" executed successfully
+2025-04-02 22:18:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:19:43 CAT)" (scheduled at 2025-04-02 22:18:43.789067+02:00)
+2025-04-02 22:18:49 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:19:43 CAT)" executed successfully
+2025-04-02 22:19:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:20:43 CAT)" (scheduled at 2025-04-02 22:19:43.789067+02:00)
+2025-04-02 22:19:52 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:20:43 CAT)" executed successfully
+2025-04-02 22:20:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:21:43 CAT)" (scheduled at 2025-04-02 22:20:43.789067+02:00)
+2025-04-02 22:20:50 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:21:43 CAT)" executed successfully
+2025-04-02 22:21:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:22:43 CAT)" (scheduled at 2025-04-02 22:21:43.789067+02:00)
+2025-04-02 22:21:54 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:22:43 CAT)" executed successfully
+2025-04-02 22:22:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:23:43 CAT)" (scheduled at 2025-04-02 22:22:43.789067+02:00)
+2025-04-02 22:22:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:23:43 CAT)" executed successfully
+2025-04-02 22:23:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:24:43 CAT)" (scheduled at 2025-04-02 22:23:43.789067+02:00)
+2025-04-02 22:23:57 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:24:43 CAT)" executed successfully
+2025-04-02 22:24:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:25:43 CAT)" (scheduled at 2025-04-02 22:24:43.789067+02:00)
+2025-04-02 22:24:54 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:25:43 CAT)" executed successfully
+2025-04-02 22:25:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:26:43 CAT)" (scheduled at 2025-04-02 22:25:43.789067+02:00)
+2025-04-02 22:25:52 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:26:43 CAT)" executed successfully
+2025-04-02 22:26:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:27:43 CAT)" (scheduled at 2025-04-02 22:26:43.789067+02:00)
+2025-04-02 22:26:53 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:27:43 CAT)" executed successfully
+2025-04-02 22:27:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:28:43 CAT)" (scheduled at 2025-04-02 22:27:43.789067+02:00)
+2025-04-02 22:28:43 - WARNING - Execution of job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:28:43 CAT)" skipped: maximum number of running instances reached (1)
+2025-04-02 22:28:48 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:29:43 CAT)" executed successfully
+2025-04-02 22:29:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:30:43 CAT)" (scheduled at 2025-04-02 22:29:43.789067+02:00)
+2025-04-02 22:30:23 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:30:43 CAT)" executed successfully
+2025-04-02 22:30:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:31:43 CAT)" (scheduled at 2025-04-02 22:30:43.789067+02:00)
+2025-04-02 22:31:10 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:31:43 CAT)" executed successfully
+2025-04-02 22:31:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:32:43 CAT)" (scheduled at 2025-04-02 22:31:43.789067+02:00)
+2025-04-02 22:32:11 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:32:43 CAT)" executed successfully
+2025-04-02 22:32:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:33:43 CAT)" (scheduled at 2025-04-02 22:32:43.789067+02:00)
+2025-04-02 22:32:55 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:33:43 CAT)" executed successfully
+2025-04-02 22:33:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:34:43 CAT)" (scheduled at 2025-04-02 22:33:43.789067+02:00)
+2025-04-02 22:34:26 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:34:43 CAT)" executed successfully
+2025-04-02 22:34:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:35:43 CAT)" (scheduled at 2025-04-02 22:34:43.789067+02:00)
+2025-04-02 22:34:44 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:35:43 CAT)" executed successfully
+2025-04-02 22:35:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:36:43 CAT)" (scheduled at 2025-04-02 22:35:43.789067+02:00)
+2025-04-02 22:36:10 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:36:43 CAT)" executed successfully
+2025-04-02 22:36:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:37:43 CAT)" (scheduled at 2025-04-02 22:36:43.789067+02:00)
+2025-04-02 22:37:00 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:37:43 CAT)" executed successfully
+2025-04-02 22:37:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:38:43 CAT)" (scheduled at 2025-04-02 22:37:43.789067+02:00)
+2025-04-02 22:37:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:38:43 CAT)" executed successfully
+2025-04-02 22:38:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:39:43 CAT)" (scheduled at 2025-04-02 22:38:43.789067+02:00)
+2025-04-02 22:38:50 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:39:43 CAT)" executed successfully
+2025-04-02 22:39:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:40:43 CAT)" (scheduled at 2025-04-02 22:39:43.789067+02:00)
+2025-04-02 22:39:50 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:40:43 CAT)" executed successfully
+2025-04-02 22:40:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:41:43 CAT)" (scheduled at 2025-04-02 22:40:43.789067+02:00)
+2025-04-02 22:40:50 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:41:43 CAT)" executed successfully
+2025-04-02 22:41:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:42:43 CAT)" (scheduled at 2025-04-02 22:41:43.789067+02:00)
+2025-04-02 22:41:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:42:43 CAT)" executed successfully
+2025-04-02 22:42:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:43:43 CAT)" (scheduled at 2025-04-02 22:42:43.789067+02:00)
+2025-04-02 22:42:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:43:43 CAT)" executed successfully
+2025-04-02 22:43:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:44:43 CAT)" (scheduled at 2025-04-02 22:43:43.789067+02:00)
+2025-04-02 22:43:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:44:43 CAT)" executed successfully
+2025-04-02 22:44:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:45:43 CAT)" (scheduled at 2025-04-02 22:44:43.789067+02:00)
+2025-04-02 22:44:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:45:43 CAT)" executed successfully
+2025-04-02 22:45:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:46:43 CAT)" (scheduled at 2025-04-02 22:45:43.789067+02:00)
+2025-04-02 22:45:55 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:46:43 CAT)" executed successfully
+2025-04-02 22:46:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:47:43 CAT)" (scheduled at 2025-04-02 22:46:43.789067+02:00)
+2025-04-02 22:46:55 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:47:43 CAT)" executed successfully
+2025-04-02 22:47:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:48:43 CAT)" (scheduled at 2025-04-02 22:47:43.789067+02:00)
+2025-04-02 22:47:53 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:48:43 CAT)" executed successfully
+2025-04-02 22:48:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:49:43 CAT)" (scheduled at 2025-04-02 22:48:43.789067+02:00)
+2025-04-02 22:48:55 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:49:43 CAT)" executed successfully
+2025-04-02 22:49:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:50:43 CAT)" (scheduled at 2025-04-02 22:49:43.789067+02:00)
+2025-04-02 22:49:58 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:50:43 CAT)" executed successfully
+2025-04-02 22:50:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:51:43 CAT)" (scheduled at 2025-04-02 22:50:43.789067+02:00)
+2025-04-02 22:50:53 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:51:43 CAT)" executed successfully
+2025-04-02 22:51:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:52:43 CAT)" (scheduled at 2025-04-02 22:51:43.789067+02:00)
+2025-04-02 22:52:36 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:52:43 CAT)" executed successfully
+2025-04-02 22:52:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:53:43 CAT)" (scheduled at 2025-04-02 22:52:43.789067+02:00)
+2025-04-02 22:52:50 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:53:43 CAT)" executed successfully
+2025-04-02 22:53:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:54:43 CAT)" (scheduled at 2025-04-02 22:53:43.789067+02:00)
+2025-04-02 22:53:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:54:43 CAT)" executed successfully
+2025-04-02 22:54:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:55:43 CAT)" (scheduled at 2025-04-02 22:54:43.789067+02:00)
+2025-04-02 22:54:50 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:55:43 CAT)" executed successfully
+2025-04-02 22:55:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:56:43 CAT)" (scheduled at 2025-04-02 22:55:43.789067+02:00)
+2025-04-02 22:55:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:56:43 CAT)" executed successfully
+2025-04-02 22:56:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:57:43 CAT)" (scheduled at 2025-04-02 22:56:43.789067+02:00)
+2025-04-02 22:57:36 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:57:43 CAT)" executed successfully
+2025-04-02 22:57:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:58:43 CAT)" (scheduled at 2025-04-02 22:57:43.789067+02:00)
+2025-04-02 22:57:44 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:58:43 CAT)" executed successfully
+2025-04-02 22:58:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:59:43 CAT)" (scheduled at 2025-04-02 22:58:43.789067+02:00)
+2025-04-02 22:59:43 - WARNING - Execution of job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 22:59:43 CAT)" skipped: maximum number of running instances reached (1)
+2025-04-02 23:00:43 - WARNING - Execution of job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:00:43 CAT)" skipped: maximum number of running instances reached (1)
+2025-04-02 23:01:35 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:01:43 CAT)" executed successfully
+2025-04-02 23:01:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:02:43 CAT)" (scheduled at 2025-04-02 23:01:43.789067+02:00)
+2025-04-02 23:01:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:02:43 CAT)" executed successfully
+2025-04-02 23:02:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:03:43 CAT)" (scheduled at 2025-04-02 23:02:43.789067+02:00)
+2025-04-02 23:02:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:03:43 CAT)" executed successfully
+2025-04-02 23:03:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:04:43 CAT)" (scheduled at 2025-04-02 23:03:43.789067+02:00)
+2025-04-02 23:03:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:04:43 CAT)" executed successfully
+2025-04-02 23:04:43 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:05:43 CAT)" (scheduled at 2025-04-02 23:04:43.789067+02:00)
+2025-04-02 23:04:51 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:05:43 CAT)" executed successfully
+2025-04-02 23:15:49 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-02 23:15:49 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-02 23:15:49 - INFO - Scheduler started
+2025-04-02 23:16:49 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:16:49 CAT)" (scheduled at 2025-04-02 23:16:49.419364+02:00)
+2025-04-02 23:17:01 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:17:49 CAT)" executed successfully
+2025-04-02 23:17:49 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:18:49 CAT)" (scheduled at 2025-04-02 23:17:49.419364+02:00)
+2025-04-02 23:17:59 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:18:49 CAT)" executed successfully
+2025-04-02 23:18:49 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:19:49 CAT)" (scheduled at 2025-04-02 23:18:49.419364+02:00)
+2025-04-02 23:18:59 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:19:49 CAT)" executed successfully
+2025-04-02 23:19:49 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:20:49 CAT)" (scheduled at 2025-04-02 23:19:49.419364+02:00)
+2025-04-02 23:20:06 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:20:49 CAT)" executed successfully
+2025-04-02 23:20:49 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:21:49 CAT)" (scheduled at 2025-04-02 23:20:49.419364+02:00)
+2025-04-02 23:21:01 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:21:49 CAT)" executed successfully
+2025-04-02 23:21:49 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:22:49 CAT)" (scheduled at 2025-04-02 23:21:49.419364+02:00)
+2025-04-02 23:22:01 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:22:49 CAT)" executed successfully
+2025-04-02 23:22:49 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:23:49 CAT)" (scheduled at 2025-04-02 23:22:49.419364+02:00)
+2025-04-02 23:23:04 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:23:49 CAT)" executed successfully
+2025-04-02 23:23:49 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:24:49 CAT)" (scheduled at 2025-04-02 23:23:49.419364+02:00)
+2025-04-02 23:24:03 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:24:49 CAT)" executed successfully
+2025-04-02 23:24:49 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:25:49 CAT)" (scheduled at 2025-04-02 23:24:49.419364+02:00)
+2025-04-02 23:25:03 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:25:49 CAT)" executed successfully
+2025-04-02 23:25:46 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-02 23:25:46 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-02 23:25:46 - INFO - Scheduler started
+2025-04-02 23:26:46 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:26:46 CAT)" (scheduled at 2025-04-02 23:26:46.043360+02:00)
+2025-04-02 23:27:16 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:27:46 CAT)" executed successfully
+2025-04-02 23:27:52 - WARNING - Run time of job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:28:46 CAT)" was missed by 0:00:06.533804
+2025-04-02 23:28:46 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-02 23:29:46 CAT)" (scheduled at 2025-04-02 23:28:46.043360+02:00)
+2025-04-03 08:53:09 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-03 08:53:09 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-03 08:53:09 - INFO - Scheduler started
+2025-04-03 08:54:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 08:54:09 CAT)" (scheduled at 2025-04-03 08:54:09.185422+02:00)
+2025-04-03 08:54:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 08:55:09 CAT)" executed successfully
+2025-04-03 08:55:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 08:56:09 CAT)" (scheduled at 2025-04-03 08:55:09.185422+02:00)
+2025-04-03 08:55:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 08:56:09 CAT)" executed successfully
+2025-04-03 08:56:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 08:57:09 CAT)" (scheduled at 2025-04-03 08:56:09.185422+02:00)
+2025-04-03 08:56:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 08:57:09 CAT)" executed successfully
+2025-04-03 08:57:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 08:58:09 CAT)" (scheduled at 2025-04-03 08:57:09.185422+02:00)
+2025-04-03 08:57:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 08:58:09 CAT)" executed successfully
+2025-04-03 08:58:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 08:59:09 CAT)" (scheduled at 2025-04-03 08:58:09.185422+02:00)
+2025-04-03 08:58:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 08:59:09 CAT)" executed successfully
+2025-04-03 08:59:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:00:09 CAT)" (scheduled at 2025-04-03 08:59:09.185422+02:00)
+2025-04-03 08:59:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:00:09 CAT)" executed successfully
+2025-04-03 09:00:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:01:09 CAT)" (scheduled at 2025-04-03 09:00:09.185422+02:00)
+2025-04-03 09:00:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:01:09 CAT)" executed successfully
+2025-04-03 09:01:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:02:09 CAT)" (scheduled at 2025-04-03 09:01:09.185422+02:00)
+2025-04-03 09:01:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:02:09 CAT)" executed successfully
+2025-04-03 09:02:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:03:09 CAT)" (scheduled at 2025-04-03 09:02:09.185422+02:00)
+2025-04-03 09:02:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:03:09 CAT)" executed successfully
+2025-04-03 09:03:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:04:09 CAT)" (scheduled at 2025-04-03 09:03:09.185422+02:00)
+2025-04-03 09:03:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:04:09 CAT)" executed successfully
+2025-04-03 09:04:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:05:09 CAT)" (scheduled at 2025-04-03 09:04:09.185422+02:00)
+2025-04-03 09:04:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:05:09 CAT)" executed successfully
+2025-04-03 09:05:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:06:09 CAT)" (scheduled at 2025-04-03 09:05:09.185422+02:00)
+2025-04-03 09:05:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:06:09 CAT)" executed successfully
+2025-04-03 09:06:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:07:09 CAT)" (scheduled at 2025-04-03 09:06:09.185422+02:00)
+2025-04-03 09:06:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:07:09 CAT)" executed successfully
+2025-04-03 09:07:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:08:09 CAT)" (scheduled at 2025-04-03 09:07:09.185422+02:00)
+2025-04-03 09:07:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:08:09 CAT)" executed successfully
+2025-04-03 09:08:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:09:09 CAT)" (scheduled at 2025-04-03 09:08:09.185422+02:00)
+2025-04-03 09:08:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:09:09 CAT)" executed successfully
+2025-04-03 09:09:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:10:09 CAT)" (scheduled at 2025-04-03 09:09:09.185422+02:00)
+2025-04-03 09:09:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:10:09 CAT)" executed successfully
+2025-04-03 09:10:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:11:09 CAT)" (scheduled at 2025-04-03 09:10:09.185422+02:00)
+2025-04-03 09:10:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:11:09 CAT)" executed successfully
+2025-04-03 09:11:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:12:09 CAT)" (scheduled at 2025-04-03 09:11:09.185422+02:00)
+2025-04-03 09:11:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:12:09 CAT)" executed successfully
+2025-04-03 09:12:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:13:09 CAT)" (scheduled at 2025-04-03 09:12:09.185422+02:00)
+2025-04-03 09:12:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:13:09 CAT)" executed successfully
+2025-04-03 09:13:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:14:09 CAT)" (scheduled at 2025-04-03 09:13:09.185422+02:00)
+2025-04-03 09:13:28 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:14:09 CAT)" executed successfully
+2025-04-03 09:14:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:15:09 CAT)" (scheduled at 2025-04-03 09:14:09.185422+02:00)
+2025-04-03 09:14:29 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:15:09 CAT)" executed successfully
+2025-04-03 09:15:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:16:09 CAT)" (scheduled at 2025-04-03 09:15:09.185422+02:00)
+2025-04-03 09:15:32 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:16:09 CAT)" executed successfully
+2025-04-03 09:16:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:17:09 CAT)" (scheduled at 2025-04-03 09:16:09.185422+02:00)
+2025-04-03 09:16:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:17:09 CAT)" executed successfully
+2025-04-03 09:17:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:18:09 CAT)" (scheduled at 2025-04-03 09:17:09.185422+02:00)
+2025-04-03 09:17:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:18:09 CAT)" executed successfully
+2025-04-03 09:18:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:19:09 CAT)" (scheduled at 2025-04-03 09:18:09.185422+02:00)
+2025-04-03 09:18:22 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:19:09 CAT)" executed successfully
+2025-04-03 09:19:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:20:09 CAT)" (scheduled at 2025-04-03 09:19:09.185422+02:00)
+2025-04-03 09:19:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:20:09 CAT)" executed successfully
+2025-04-03 09:20:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:21:09 CAT)" (scheduled at 2025-04-03 09:20:09.185422+02:00)
+2025-04-03 09:20:23 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:21:09 CAT)" executed successfully
+2025-04-03 09:21:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:22:09 CAT)" (scheduled at 2025-04-03 09:21:09.185422+02:00)
+2025-04-03 09:21:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:22:09 CAT)" executed successfully
+2025-04-03 09:22:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:23:09 CAT)" (scheduled at 2025-04-03 09:22:09.185422+02:00)
+2025-04-03 09:22:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:23:09 CAT)" executed successfully
+2025-04-03 09:23:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:24:09 CAT)" (scheduled at 2025-04-03 09:23:09.185422+02:00)
+2025-04-03 09:23:22 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:24:09 CAT)" executed successfully
+2025-04-03 09:24:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:25:09 CAT)" (scheduled at 2025-04-03 09:24:09.185422+02:00)
+2025-04-03 09:24:23 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:25:09 CAT)" executed successfully
+2025-04-03 09:25:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:26:09 CAT)" (scheduled at 2025-04-03 09:25:09.185422+02:00)
+2025-04-03 09:25:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:26:09 CAT)" executed successfully
+2025-04-03 09:26:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:27:09 CAT)" (scheduled at 2025-04-03 09:26:09.185422+02:00)
+2025-04-03 09:28:57 - ERROR - Error processing ETHUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 09:29:07 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:27:09 CAT)" executed successfully
+2025-04-03 09:29:35 - WARNING - Run time of job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:30:09 CAT)" was missed by 0:00:25.882470
+2025-04-03 09:30:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:31:09 CAT)" (scheduled at 2025-04-03 09:30:09.185422+02:00)
+2025-04-03 09:30:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:31:09 CAT)" executed successfully
+2025-04-03 09:31:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:32:09 CAT)" (scheduled at 2025-04-03 09:31:09.185422+02:00)
+2025-04-03 09:31:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:32:09 CAT)" executed successfully
+2025-04-03 09:32:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:33:09 CAT)" (scheduled at 2025-04-03 09:32:09.185422+02:00)
+2025-04-03 09:32:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:33:09 CAT)" executed successfully
+2025-04-03 09:33:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:34:09 CAT)" (scheduled at 2025-04-03 09:33:09.185422+02:00)
+2025-04-03 09:33:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:34:09 CAT)" executed successfully
+2025-04-03 09:34:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:35:09 CAT)" (scheduled at 2025-04-03 09:34:09.185422+02:00)
+2025-04-03 09:34:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:35:09 CAT)" executed successfully
+2025-04-03 09:35:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:36:09 CAT)" (scheduled at 2025-04-03 09:35:09.185422+02:00)
+2025-04-03 09:35:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:36:09 CAT)" executed successfully
+2025-04-03 09:36:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:37:09 CAT)" (scheduled at 2025-04-03 09:36:09.185422+02:00)
+2025-04-03 09:36:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:37:09 CAT)" executed successfully
+2025-04-03 09:37:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:38:09 CAT)" (scheduled at 2025-04-03 09:37:09.185422+02:00)
+2025-04-03 09:37:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:38:09 CAT)" executed successfully
+2025-04-03 09:38:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:39:09 CAT)" (scheduled at 2025-04-03 09:38:09.185422+02:00)
+2025-04-03 09:38:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:39:09 CAT)" executed successfully
+2025-04-03 09:39:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:40:09 CAT)" (scheduled at 2025-04-03 09:39:09.185422+02:00)
+2025-04-03 09:39:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:40:09 CAT)" executed successfully
+2025-04-03 09:40:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:41:09 CAT)" (scheduled at 2025-04-03 09:40:09.185422+02:00)
+2025-04-03 09:40:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:41:09 CAT)" executed successfully
+2025-04-03 09:41:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:42:09 CAT)" (scheduled at 2025-04-03 09:41:09.185422+02:00)
+2025-04-03 09:41:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:42:09 CAT)" executed successfully
+2025-04-03 09:42:18 - WARNING - Run time of job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:43:09 CAT)" was missed by 0:00:09.487973
+2025-04-03 09:43:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:44:09 CAT)" (scheduled at 2025-04-03 09:43:09.185422+02:00)
+2025-04-03 09:43:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:44:09 CAT)" executed successfully
+2025-04-03 09:44:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:45:09 CAT)" (scheduled at 2025-04-03 09:44:09.185422+02:00)
+2025-04-03 09:44:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:45:09 CAT)" executed successfully
+2025-04-03 09:45:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:46:09 CAT)" (scheduled at 2025-04-03 09:45:09.185422+02:00)
+2025-04-03 09:45:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:46:09 CAT)" executed successfully
+2025-04-03 09:46:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:47:09 CAT)" (scheduled at 2025-04-03 09:46:09.185422+02:00)
+2025-04-03 09:46:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:47:09 CAT)" executed successfully
+2025-04-03 09:47:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:48:09 CAT)" (scheduled at 2025-04-03 09:47:09.185422+02:00)
+2025-04-03 09:47:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:48:09 CAT)" executed successfully
+2025-04-03 09:48:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:49:09 CAT)" (scheduled at 2025-04-03 09:48:09.185422+02:00)
+2025-04-03 09:48:19 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-03 09:48:19 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-03 09:48:19 - INFO - Scheduler started
+2025-04-03 09:48:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:49:09 CAT)" executed successfully
+2025-04-03 09:49:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:50:09 CAT)" (scheduled at 2025-04-03 09:49:09.185422+02:00)
+2025-04-03 09:49:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:49:19 CAT)" (scheduled at 2025-04-03 09:49:19.451054+02:00)
+2025-04-03 09:49:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:50:09 CAT)" executed successfully
+2025-04-03 09:49:38 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:50:19 CAT)" executed successfully
+2025-04-03 09:50:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:51:09 CAT)" (scheduled at 2025-04-03 09:50:09.185422+02:00)
+2025-04-03 09:50:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:51:19 CAT)" (scheduled at 2025-04-03 09:50:19.451054+02:00)
+2025-04-03 09:50:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:51:09 CAT)" executed successfully
+2025-04-03 09:50:38 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:51:19 CAT)" executed successfully
+2025-04-03 09:51:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:52:09 CAT)" (scheduled at 2025-04-03 09:51:09.185422+02:00)
+2025-04-03 09:51:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:52:19 CAT)" (scheduled at 2025-04-03 09:51:19.451054+02:00)
+2025-04-03 09:51:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:52:09 CAT)" executed successfully
+2025-04-03 09:51:39 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:52:19 CAT)" executed successfully
+2025-04-03 09:52:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:53:09 CAT)" (scheduled at 2025-04-03 09:52:09.185422+02:00)
+2025-04-03 09:52:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:53:09 CAT)" executed successfully
+2025-04-03 09:52:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:53:19 CAT)" (scheduled at 2025-04-03 09:52:19.451054+02:00)
+2025-04-03 09:52:37 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:53:19 CAT)" executed successfully
+2025-04-03 09:53:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:54:09 CAT)" (scheduled at 2025-04-03 09:53:09.185422+02:00)
+2025-04-03 09:53:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:54:19 CAT)" (scheduled at 2025-04-03 09:53:19.451054+02:00)
+2025-04-03 09:53:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:54:09 CAT)" executed successfully
+2025-04-03 09:53:38 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:54:19 CAT)" executed successfully
+2025-04-03 09:54:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:55:09 CAT)" (scheduled at 2025-04-03 09:54:09.185422+02:00)
+2025-04-03 09:54:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:55:09 CAT)" executed successfully
+2025-04-03 09:54:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:55:19 CAT)" (scheduled at 2025-04-03 09:54:19.451054+02:00)
+2025-04-03 09:54:38 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:55:19 CAT)" executed successfully
+2025-04-03 09:55:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:56:09 CAT)" (scheduled at 2025-04-03 09:55:09.185422+02:00)
+2025-04-03 09:55:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:56:19 CAT)" (scheduled at 2025-04-03 09:55:19.451054+02:00)
+2025-04-03 09:55:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:56:09 CAT)" executed successfully
+2025-04-03 09:55:44 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:56:19 CAT)" executed successfully
+2025-04-03 09:56:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:57:09 CAT)" (scheduled at 2025-04-03 09:56:09.185422+02:00)
+2025-04-03 09:56:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:57:19 CAT)" (scheduled at 2025-04-03 09:56:19.451054+02:00)
+2025-04-03 09:56:22 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:57:09 CAT)" executed successfully
+2025-04-03 09:56:41 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:57:19 CAT)" executed successfully
+2025-04-03 09:57:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:58:09 CAT)" (scheduled at 2025-04-03 09:57:09.185422+02:00)
+2025-04-03 09:57:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:58:19 CAT)" (scheduled at 2025-04-03 09:57:19.451054+02:00)
+2025-04-03 09:57:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:58:09 CAT)" executed successfully
+2025-04-03 09:57:36 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:58:19 CAT)" executed successfully
+2025-04-03 09:58:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:59:09 CAT)" (scheduled at 2025-04-03 09:58:09.185422+02:00)
+2025-04-03 09:58:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:59:19 CAT)" (scheduled at 2025-04-03 09:58:19.451054+02:00)
+2025-04-03 09:58:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:59:09 CAT)" executed successfully
+2025-04-03 09:58:43 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 09:59:19 CAT)" executed successfully
+2025-04-03 09:59:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:00:09 CAT)" (scheduled at 2025-04-03 09:59:09.185422+02:00)
+2025-04-03 09:59:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:00:19 CAT)" (scheduled at 2025-04-03 09:59:19.451054+02:00)
+2025-04-03 09:59:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:00:09 CAT)" executed successfully
+2025-04-03 09:59:43 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:00:19 CAT)" executed successfully
+2025-04-03 10:00:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:01:09 CAT)" (scheduled at 2025-04-03 10:00:09.185422+02:00)
+2025-04-03 10:00:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:01:19 CAT)" (scheduled at 2025-04-03 10:00:19.451054+02:00)
+2025-04-03 10:00:21 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:01:09 CAT)" executed successfully
+2025-04-03 10:00:38 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:01:19 CAT)" executed successfully
+2025-04-03 10:01:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:02:09 CAT)" (scheduled at 2025-04-03 10:01:09.185422+02:00)
+2025-04-03 10:01:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:02:19 CAT)" (scheduled at 2025-04-03 10:01:19.451054+02:00)
+2025-04-03 10:01:20 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:02:09 CAT)" executed successfully
+2025-04-03 10:01:39 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:02:19 CAT)" executed successfully
+2025-04-03 10:02:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:03:09 CAT)" (scheduled at 2025-04-03 10:02:09.185422+02:00)
+2025-04-03 10:02:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:03:19 CAT)" (scheduled at 2025-04-03 10:02:19.451054+02:00)
+2025-04-03 10:02:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:03:09 CAT)" executed successfully
+2025-04-03 10:02:36 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:03:19 CAT)" executed successfully
+2025-04-03 10:03:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:04:09 CAT)" (scheduled at 2025-04-03 10:03:09.185422+02:00)
+2025-04-03 10:03:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:04:09 CAT)" executed successfully
+2025-04-03 10:03:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:04:19 CAT)" (scheduled at 2025-04-03 10:03:19.451054+02:00)
+2025-04-03 10:03:39 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:04:19 CAT)" executed successfully
+2025-04-03 10:04:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:05:09 CAT)" (scheduled at 2025-04-03 10:04:09.185422+02:00)
+2025-04-03 10:04:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:05:09 CAT)" executed successfully
+2025-04-03 10:04:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:05:19 CAT)" (scheduled at 2025-04-03 10:04:19.451054+02:00)
+2025-04-03 10:04:38 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:05:19 CAT)" executed successfully
+2025-04-03 10:05:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:06:09 CAT)" (scheduled at 2025-04-03 10:05:09.185422+02:00)
+2025-04-03 10:05:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:06:19 CAT)" (scheduled at 2025-04-03 10:05:19.451054+02:00)
+2025-04-03 10:05:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:06:09 CAT)" executed successfully
+2025-04-03 10:05:37 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:06:19 CAT)" executed successfully
+2025-04-03 10:06:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:07:09 CAT)" (scheduled at 2025-04-03 10:06:09.185422+02:00)
+2025-04-03 10:06:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:07:09 CAT)" executed successfully
+2025-04-03 10:06:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:07:19 CAT)" (scheduled at 2025-04-03 10:06:19.451054+02:00)
+2025-04-03 10:06:37 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:07:19 CAT)" executed successfully
+2025-04-03 10:07:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:08:09 CAT)" (scheduled at 2025-04-03 10:07:09.185422+02:00)
+2025-04-03 10:07:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:08:19 CAT)" (scheduled at 2025-04-03 10:07:19.451054+02:00)
+2025-04-03 10:07:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:08:09 CAT)" executed successfully
+2025-04-03 10:07:39 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:08:19 CAT)" executed successfully
+2025-04-03 10:08:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:09:09 CAT)" (scheduled at 2025-04-03 10:08:09.185422+02:00)
+2025-04-03 10:08:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:09:19 CAT)" (scheduled at 2025-04-03 10:08:19.451054+02:00)
+2025-04-03 10:08:19 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:09:09 CAT)" executed successfully
+2025-04-03 10:08:39 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:09:19 CAT)" executed successfully
+2025-04-03 10:09:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:10:09 CAT)" (scheduled at 2025-04-03 10:09:09.185422+02:00)
+2025-04-03 10:09:18 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:10:09 CAT)" executed successfully
+2025-04-03 10:09:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:10:19 CAT)" (scheduled at 2025-04-03 10:09:19.451054+02:00)
+2025-04-03 10:09:37 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:10:19 CAT)" executed successfully
+2025-04-03 10:10:09 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:11:09 CAT)" (scheduled at 2025-04-03 10:10:09.185422+02:00)
+2025-04-03 10:10:19 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:11:19 CAT)" (scheduled at 2025-04-03 10:10:19.451054+02:00)
+2025-04-03 10:10:48 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-03 10:10:48 - INFO - Added job "scheduled_task" to job store "default"
+2025-04-03 10:10:48 - INFO - Scheduler started
+2025-04-03 10:11:48 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:11:48 CAT)" (scheduled at 2025-04-03 10:11:48.912065+02:00)
+2025-04-03 10:12:00 - ERROR - Error processing USDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:12:13 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:12:48 CAT)" executed successfully
+2025-04-03 10:12:48 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:13:48 CAT)" (scheduled at 2025-04-03 10:12:48.912065+02:00)
+2025-04-03 10:13:00 - ERROR - Error processing USDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:13:13 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:13:48 CAT)" executed successfully
+2025-04-03 10:13:48 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:14:48 CAT)" (scheduled at 2025-04-03 10:13:48.912065+02:00)
+2025-04-03 10:14:01 - ERROR - Error processing USDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:14:14 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:14:48 CAT)" executed successfully
+2025-04-03 10:14:48 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:15:48 CAT)" (scheduled at 2025-04-03 10:14:48.912065+02:00)
+2025-04-03 10:15:02 - ERROR - Error processing USDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:15:16 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:15:48 CAT)" executed successfully
+2025-04-03 10:15:48 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:16:48 CAT)" (scheduled at 2025-04-03 10:15:48.912065+02:00)
+2025-04-03 10:16:00 - ERROR - Error processing USDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:16:15 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:16:48 CAT)" executed successfully
+2025-04-03 10:16:48 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:17:48 CAT)" (scheduled at 2025-04-03 10:16:48.912065+02:00)
+2025-04-03 10:17:01 - ERROR - Error processing USDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:17:15 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:17:48 CAT)" executed successfully
+2025-04-03 10:17:48 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:18:48 CAT)" (scheduled at 2025-04-03 10:17:48.912065+02:00)
+2025-04-03 10:18:08 - ERROR - Error processing BTCUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:20 - ERROR - Error processing ETHUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing BNBUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing SOLUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing TROYUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing EOSUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing CAKEUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing ORCAUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing USDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing DOGEUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing ADAUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing PEPEUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing BIOUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing BERAUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing CGPTUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing LTCUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing BTTCUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - ERROR - Error processing XRPUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:18:31 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:18:48 CAT)" executed successfully
+2025-04-03 10:18:48 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:19:48 CAT)" (scheduled at 2025-04-03 10:18:48.912065+02:00)
+2025-04-03 10:19:00 - ERROR - Error processing BTCUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing ETHUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing BNBUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing SOLUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing TROYUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing EOSUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing CAKEUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing ORCAUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing USDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing DOGEUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing ADAUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing PEPEUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing BIOUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing BERAUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing CGPTUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing LTCUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing BTTCUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - ERROR - Error processing XRPUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:00 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:19:48 CAT)" executed successfully
+2025-04-03 10:19:48 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:20:48 CAT)" (scheduled at 2025-04-03 10:19:48.912065+02:00)
+2025-04-03 10:19:48 - ERROR - Error processing BTCUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing ETHUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing BNBUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing SOLUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing TROYUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing EOSUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing CAKEUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing ORCAUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing USDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing DOGEUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing ADAUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing PEPEUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing BIOUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing BERAUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing CGPTUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing LTCUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing BTTCUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - ERROR - Error processing XRPUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:19:48 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:20:48 CAT)" executed successfully
+2025-04-03 10:20:48 - INFO - Running job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:21:48 CAT)" (scheduled at 2025-04-03 10:20:48.912065+02:00)
+2025-04-03 10:20:48 - ERROR - Error processing BTCUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:48 - ERROR - Error processing ETHUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:48 - ERROR - Error processing BNBUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:48 - ERROR - Error processing SOLUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:48 - ERROR - Error processing TROYUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:48 - ERROR - Error processing EOSUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:48 - ERROR - Error processing CAKEUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:48 - ERROR - Error processing ORCAUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:49 - ERROR - Error processing USDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:49 - ERROR - Error processing DOGEUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:49 - ERROR - Error processing ADAUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:49 - ERROR - Error processing PEPEUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:49 - ERROR - Error processing BIOUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:49 - ERROR - Error processing BERAUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:49 - ERROR - Error processing CGPTUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:49 - ERROR - Error processing LTCUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:49 - ERROR - Error processing BTTCUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:49 - ERROR - Error processing XRPUSDT: get_coingecko_market_data() takes 1 positional argument but 3 were given
+2025-04-03 10:20:49 - INFO - Job "scheduled_task (trigger: interval[0:01:00], next run at: 2025-04-03 10:21:48 CAT)" executed successfully
