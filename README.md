@@ -24,7 +24,7 @@
 
 ```bash
 # تفعيل البيئة الافتراضية
-source venv/bin/activate   # على لينكس / ماك
+
 venv\Scripts\activate      # على ويندوز
 
 # تشغيل التطبيق
