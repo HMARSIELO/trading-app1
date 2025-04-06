@@ -10,12 +10,21 @@ ENV PYTHONUNBUFFERED 1
 # تعيين مجلد العمل داخل الحاوية
 WORKDIR /app
 
-# نسخ ملف المتطلبات وتثبيت المكتبات
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# نسخ ملف المتطلبات
+COPY requirements.in .
+
+# تثبيت pip-tools لإدارة الإصدارات
+RUN pip install pip-tools
+
+# توليد requirements.txt مع الإصدارات
+RUN pip-compile requirements.in
 
 # نسخ باقي ملفات المشروع إلى الحاوية
 COPY . .
+
+# تثبيت المكتبات
+RUN pip install --no-cache-dir -r requirements.txt
+
 
 # تحديد الأمر الافتراضي لتشغيل التطبيق
 CMD ["python", "main.py"]
