@@ -41,6 +41,7 @@ python-telegram-bot
 pytz
 regex
 requests
+rfc3986
 scikit-learn
 scipy
 six
