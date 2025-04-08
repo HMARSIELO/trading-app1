@@ -24,11 +24,10 @@ httpcore
 httpx
 idna
 joblib
-talib
+ta-lib @ ./ta_lib-0.6.3-cp310-cp310-win_amd64.whl
 jwt
 multidict
 matplotlib
-matplotlib.pyplot
 numpy
 pandas
 passlib
