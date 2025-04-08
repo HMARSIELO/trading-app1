@@ -5,6 +5,7 @@ annotated-types
 anyio
 async-timeout
 attrs
+apscheduler
 bcrypt
 certifi
 cffi
@@ -16,14 +17,18 @@ dateparser
 exceptiongroup
 fastapi
 frozenlist
+flask
 greenlet
 h11
 httpcore
 httpx
 idna
 joblib
+talib
 jwt
 multidict
+matplotlib
+matplotlib.pyplot
 numpy
 pandas
 passlib
@@ -41,6 +46,8 @@ python-telegram-bot
 pytz
 regex
 requests
+requests-oauthlib
+requests-toolbelt
 rfc3986
 scikit-learn
 scipy
