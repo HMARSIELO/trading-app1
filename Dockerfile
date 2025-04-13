@@ -20,7 +20,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY . .
 
 # تثبيت مكتبات Python
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --default-timeout=3000 -r requirements.txt
+
 
 # تشغيل التطبيق
 CMD ["python", "main.py"]
