@@ -1,28 +1,27 @@
-# coingecko_api.py
-import requests
 import pandas as pd
+import requests
 
-def get_coingecko_market_data(symbol: str):
-    """
-    جلب بيانات السوق لأي عملة من CoinGecko.
-    """
-    url = f"https://api.coingecko.com/api/v3/coins/markets"
-    params = {
-        "vs_currency": "usd",
-        "ids": symbol.lower(),
-        "order": "market_cap_desc",
-        "per_page": 1,
-        "page": 1,
-        "sparkline": False
-    }
-    
+def get_coingecko_market_data(symbol, interval=None, limit=100):
     try:
-        response = requests.get(url, params=params, timeout=10)
-        response.raise_for_status()
-        data = response.json()
-        if data:
-            return pd.DataFrame(data)
+        ids_map = {
+            "BTCUSDT": "bitcoin", "ETHUSDT": "ethereum", "BNBUSDT": "binancecoin"
+            # أضف ما تحتاجه
+        }
+        id = ids_map.get(symbol)
+        if not id:
+            return None
+
+        url = f"https://api.coingecko.com/api/v3/coins/{id}/market_chart"
+        res = requests.get(url, params={"vs_currency": "usd", "days": "1", "interval": "minute"}, timeout=10)
+        prices = res.json().get("prices")
+        if prices:
+            df = pd.DataFrame(prices, columns=["timestamp", "close"])
+            df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms").astype(int) / 10**9
+            df["open"] = df["high"] = df["low"] = df["close"]
+            df["volume"] = 0.0
+            df = df[["timestamp", "open", "high", "low", "close", "volume"]]
+            return df
         return None
     except Exception as e:
-        print(f"Error retrieving data from CoinGecko for {symbol}: {e}")
+        print(f"CoinGecko error: {e}")
         return None

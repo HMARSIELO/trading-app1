@@ -7,6 +7,12 @@ from telegram_bot import send_message
 from config import UPDATE_INTERVAL_SECONDS
 from binance_api import get_market_data
 from indicators import calculate_atr
+import logging
+from numpy import NaN as npNaN
+
+
+logging.basicConfig(level=logging.DEBUG)
+
 
 def get_top_150_coins():
     """
@@ -80,6 +86,7 @@ def start_scheduler():
     scheduler = BlockingScheduler()
     scheduler.add_job(scheduled_task, "interval", seconds=UPDATE_INTERVAL_SECONDS)
     scheduler.start()
+
 
 if __name__ == "__main__":
     start_scheduler()

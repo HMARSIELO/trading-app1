@@ -1,22 +1,47 @@
-# main.py
-from logger import setup_logging
-from scheduler import start_scheduler
-from flask import Flask, send_from_directory
-def main():
-    setup_logging()
-    print("بدء تشغيل تطبيق التداول الآلي...")
+from flask import Flask, render_template, request, redirect, url_for, session
+from apscheduler.schedulers.background import BackgroundScheduler
+from scheduler import scheduled_task  # أو أي ملف آخر يحتوي على الدالة
+import os
+import logging
 
-    start_scheduler()
 app = Flask(__name__)
+app.secret_key = "secret_key"  # استبدلها بمفتاح حقيقي في الإنتاج
+scheduler = BackgroundScheduler()
+scheduler.add_job(scheduled_task, 'interval', seconds=300)  # كل 5 دقائق
+scheduler.start()
 
-# استضافة الملفات الثابتة (الصورة والصفحة الرئيسية)
+# إعداد التسجيل
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s:%(message)s')
+
 @app.route('/')
-def home():
-    return send_from_directory('static', 'index.html')
+def login_page():
+    return render_template("index.html")
 
-@app.route('/static/<path:filename>')
-def serve_static(filename):
-    return send_from_directory('static', filename)
+@app.route('/login', methods=['POST'])
+def login():
+    username = request.form['username']
+    password = request.form['password']
+    if username == "admin" and password == "admin123":
+        session['logged_in'] = True
+        return redirect(url_for('analysis'))
+    return "اسم المستخدم أو كلمة المرور غير صحيحة"
 
-if __name__ == '__main__':
-     start_scheduler()
+@app.route('/analysis')
+def analysis():
+    if not session.get('logged_in'):
+        return redirect(url_for('login_page'))
+
+    try:
+        with open("signals.log", "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        lines = ["لم يتم توليد إشارات حتى الآن."]
+    return "<br>".join(lines[-50:])  # آخر 50 سطر
+
+@app.route('/logout')
+def logout():
+    session.pop('logged_in', None)
+    return redirect(url_for('login_page'))
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8000)

@@ -1,40 +1,60 @@
-# indicators.py
 import pandas as pd
-import talib
-import numpy as np
+import pandas_ta as ta
 
-def calculate_rsi(data: pd.DataFrame, period: int = 14):
-    close = data['close'].values.astype(float)
-    return talib.RSI(close, timeperiod=period)
 
-def calculate_macd(data: pd.DataFrame, fastperiod=12, slowperiod=26, signalperiod=9):
-    close = data['close'].values.astype(float)
-    macd, signal, hist = talib.MACD(close, fastperiod=fastperiod, slowperiod=slowperiod, signalperiod=signalperiod)
-    return macd, signal, hist
+def calculate_rsi(df, period=14):
+    if df is None or df.empty or len(df) < period:
+        return pd.Series()
+    return ta.rsi(df['close'], length=period)
 
-def calculate_bollinger_bands(data: pd.DataFrame, period=20, nbdevup=2, nbdevdn=2):
-    close = data['close'].values.astype(float)
-    upper, middle, lower = talib.BBANDS(close, timeperiod=period, nbdevup=nbdevup, nbdevdn=nbdevdn)
-    return upper, middle, lower
 
-def calculate_atr(data: pd.DataFrame, period=14):
-    high = data['high'].values.astype(float)
-    low = data['low'].values.astype(float)
-    close = data['close'].values.astype(float)
-    atr = talib.ATR(high, low, close, timeperiod=period)
-    return atr[-1] if len(atr) > 0 else None
+def calculate_macd(df):
+    if df is None or df.empty or len(df) < 35:
+        return pd.Series(), pd.Series(), pd.Series()
+    macd_result = ta.macd(df['close'], fast=12, slow=26, signal=9)
+    return (
+        macd_result['MACD_12_26_9'],
+        macd_result['MACDs_12_26_9'],
+        macd_result['MACDh_12_26_9']
+    )
 
-def calculate_pivot_points(data: pd.DataFrame):
-    last = data.iloc[-1]
-    pivot = (last['high'] + last['low'] + last['close']) / 3
-    support1 = (2 * pivot) - last['high']
-    resistance1 = (2 * pivot) - last['low']
-    support2 = pivot - (last['high'] - last['low'])
-    resistance2 = pivot + (last['high'] - last['low'])
-    return pivot, support1, resistance1, support2, resistance2
 
-def calculate_liquidity(data: pd.DataFrame, period=20):
-    if len(data) < period:
+def calculate_bollinger(df, period=20):
+    if df is None or df.empty or len(df) < period:
+        return pd.Series(), pd.Series(), pd.Series()
+    bbands = ta.bbands(df['close'], length=period)
+    return (
+        bbands['BBU_20_2.0'],
+        bbands['BBM_20_2.0'],
+        bbands['BBL_20_2.0']
+    )
+
+
+def calculate_liquidity(df, period=20):
+    if df is None or df.empty or len(df) < period:
         return 0
-    rolling_vol = data['volume'].rolling(window=period).mean()
-    return rolling_vol.iloc[-1] if rolling_vol.notnull().all() else 0
+    avg_volume = df['volume'].tail(period).mean()
+    return avg_volume
+
+
+def calculate_pivot_points(df):
+    if df is None or df.empty:
+        return 0, 0, 0, 0, 0
+    latest = df.iloc[-1]
+    high = latest['high']
+    low = latest['low']
+    close = latest['close']
+
+    pivot = (high + low + close) / 3
+    r1 = 2 * pivot - low
+    s1 = 2 * pivot - high
+    r2 = pivot + (r1 - s1)
+    s2 = pivot - (r1 - s1)
+    return pivot, s1, r1, s2, r2
+
+
+def calculate_atr(df, period=14):
+    if df is None or df.empty or len(df) < period:
+        return None
+    atr_series = ta.atr(high=df['high'], low=df['low'], close=df['close'], length=period)
+    return atr_series.iloc[-1] if atr_series is not None else None
