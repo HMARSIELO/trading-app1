@@ -1,22 +1,26 @@
-# استخدم صورة Python الرسمية
-FROM python:3.10-slim
+FROM python:3.10
 
-# تثبيت بعض الأدوات الأساسية
-RUN apt-get update && apt-get install -y build-essential libffi-dev libssl-dev curl git
-
-# إعداد مجلد التطبيق
+# تعيين مجلد العمل داخل الحاوية
 WORKDIR /app
 
-# نسخ الملفات
-COPY . /app
-
-# تثبيت المتطلبات
-RUN pip install --upgrade pip
-# نسخ ملفات المتطلبات
+# نسخ المتطلبات
 COPY requirements.txt .
-RUN pip install --upgrade pip
-RUN pip install --no-cache-dir --timeout 3000 -r requirements.txt
 
+# تثبيت الأدوات الأساسية مع تنظيف بعد التثبيت
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libffi-dev \
+    libssl-dev \
+    curl \
+    git \
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/*
 
+# إعداد مجلد التطبيق
+COPY . .
 
-CMD ["python", "main.py"]
+# تثبيت مكتبات Python
+RUN pip install --no-cache-dir -r requirements.txt
+
+# تشغيل التطبيق
+CMD ["python", "app.py"]
