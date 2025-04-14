@@ -5,33 +5,62 @@
     <title>تسجيل الدخول</title>
     <style>
         body {
-            background-color: #222;
-            color: white;
+            margin: 0;
+            padding: 0;
             font-family: Arial;
             text-align: center;
+            color: white;
         }
+
+        /* خلفية الصورة */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            background-image: url('/static/login-image.jpg'); /* المسار إلى الصورة */
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        /* صندوق تسجيل الدخول */
         .login-box {
+            position: relative;
             margin: 100px auto;
             padding: 30px;
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.7); /* لون نصف شفاف */
             width: 300px;
             border-radius: 10px;
+            box-shadow: 0 0 10px #000;
         }
-        .login-box img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
+
         input {
             padding: 8px;
             margin: 10px;
             width: 90%;
+            border: none;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
+    <!-- خلفية تغطي الصفحة كاملة -->
+    <div class="background"></div>
+
+    <!-- نموذج تسجيل الدخول -->
     <div class="login-box">
-        <img src="/static/login-image.jpg" alt="login">
         <form action="/login" method="post">
             <input type="text" name="username" placeholder="اسم المستخدم" required><br>
             <input type="password" name="password" placeholder="كلمة المرور" required><br>

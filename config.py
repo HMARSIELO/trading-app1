@@ -13,5 +13,5 @@ STOP_LOSS_PERCENTAGE = 0.02          # نسبة وقف الخسارة (2%)
 TOP_COIN_COUNT = 20                # اختيار أفضل 20 عملة
 UPDATE_INTERVAL_SECONDS = 60       # تحديث البيانات كل 60 ثانية
 
-USERNAME = "admin"
-PASSWORD = "admin123"
+USERNAME = "HMARSIELO"
+PASSWORD = "Hassan#99"
