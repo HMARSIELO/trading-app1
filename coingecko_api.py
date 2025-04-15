@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 from symbol_mapper import ids_map
 
-def get_coingecko_market_data(symbol, interval=None, limit=100):
+def get_top_symbols(symbol, interval=None, limit=100):
     try:
         id = ids_map.get(symbol)
         if not id:

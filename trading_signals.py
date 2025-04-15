@@ -93,7 +93,7 @@ if __name__ == "__main__":
 
 
     for symbol in symbols:
-        final, detail, votes = evaluate_coin_multi_timeframe(symbol, ["1m", "5m", "1h"])
+        final, detail, votes = evaluate_coin_multi_timeframe(symbol, ["1m", "5m", "1h", "4h", "1d"])
         print(f"\nFinal signal for {symbol}: {final}")
         print("Details:", detail)
         print("Votes:", votes)

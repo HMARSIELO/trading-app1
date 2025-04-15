@@ -12,7 +12,7 @@ from datetime import datetime
 logging.basicConfig(level=logging.INFO)
 
 def scheduled_task():
-    coins = get_top_symbols(limit=30)
+    coins = get_top_symbols(limit=50)
     if not coins:
         logging.error("لم يتم استرجاع قائمة العملات.")
         return
