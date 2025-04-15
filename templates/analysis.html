@@ -6,20 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="90">
     <style>
-        body { font-family: Arial; background-color: #111; color: white; padding: 20px; }
-        h2 { text-align: center; margin-bottom: 20px; }
-        .table-container { overflow-x: auto; }
-        table {
-            width: 100%; min-width: 800px; border-collapse: collapse;
-            background-color: #222; color: white;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #111;
+            color: white;
+            margin: 0;
+            padding: 20px;
         }
-        th, td { border: 1px solid #444; padding: 10px; text-align: center; }
-        th { background-color: #333; }
-        tr:nth-child(even) { background-color: #1a1a1a; }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            min-width: 1000px;
+            border-collapse: collapse;
+            background-color: #222;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #1a1a1a;
+        }
+
+        .buy {
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .sell {
+            color: #ff5252;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 768px) {
+            table {
+                font-size: 13px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h2>📊 آخر 50 تحليل للعملات</h2>
+    <h2>📊 جدول التحليل اللحظي للعملات</h2>
     <div class="table-container">
         <table>
             <thead>
@@ -41,16 +86,16 @@
                 {% for r in results %}
                 <tr>
                     <td>{{ r.symbol }}</td>
-                    <td>{{ r.rsi or '-' }}</td>
-                    <td>{{ r.macd or '-' }}</td>
-                    <td>{{ r.macd_signal or '-' }}</td>
-                    <td>{{ r.bb_upper or '-' }}</td>
-                    <td>{{ r.bb_lower or '-' }}</td>
-                    <td>{{ r.liquidity or '-' }}</td>
-                    <td>{{ r.atr or '-' }}</td>
-                    <td>{{ 'BUY' if r.signal == 1 else 'SELL' }}</td>
+                    <td>{{ "%.2f"|format(r.rsi) if r.rsi is not none else '-' }}</td>
+                    <td>{{ "%.4f"|format(r.macd) if r.macd is not none else '-' }}</td>
+                    <td>{{ "%.4f"|format(r.macd_signal) if r.macd_signal is not none else '-' }}</td>
+                    <td>{{ "%.4f"|format(r.bb_upper) if r.bb_upper is not none else '-' }}</td>
+                    <td>{{ "%.4f"|format(r.bb_lower) if r.bb_lower is not none else '-' }}</td>
+                    <td>{{ "%.2f"|format(r.liquidity) if r.liquidity is not none else '-' }}</td>
+                    <td>{{ "%.4f"|format(r.atr) if r.atr is not none else '-' }}</td>
+                    <td class="{{ 'buy' if r.signal == 1 else 'sell' }}">{{ 'BUY' if r.signal == 1 else 'SELL' }}</td>
                     <td>{{ r.source }}</td>
-                    <td>{{ r.timestamp }}</td>
+                    <td>{{ r.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</td>
                 </tr>
                 {% endfor %}
             </tbody>

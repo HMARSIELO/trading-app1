@@ -1,12 +1,13 @@
+# Use official Python 3.10 base image
 FROM python:3.10
 
-# تعيين مجلد العمل داخل الحاوية
+# Set working directory
 WORKDIR /app
 
-# نسخ المتطلبات
+# Copy and install Python dependencies
 COPY requirements.txt .
 
-# تثبيت الأدوات الأساسية مع تنظيف بعد التثبيت
+# Optional: install build tools if needed for numpy/pandas
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libffi-dev \
@@ -16,12 +17,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
-# إعداد مجلد التطبيق
+# Install Python dependencies
+RUN pip install --no-cache-dir --default-timeout=3000 -r requirements.txt
+
+# Copy the rest of the application
 COPY . .
 
-# تثبيت مكتبات Python
-RUN pip install --default-timeout=3000 -r requirements.txt
+# Expose port if needed (optional)
+EXPOSE 8000
 
-
-# تشغيل التطبيق
+# Start the app
 CMD ["python", "main.py"]
