@@ -11,11 +11,11 @@ scheduler = BackgroundScheduler()
 scheduler.add_job(scheduled_task, 'interval', seconds=300)
 scheduler.start()
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s:%(message)s')
+logging.basicConfig(level=logging.INFO)
 
 @app.route('/')
 def login_page():
-    return render_template("index.html")
+    return render_template("login.html")
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -35,11 +35,7 @@ def analysis():
     results = db.query(AnalysisResult).order_by(AnalysisResult.timestamp.desc()).limit(50).all()
     db.close()
 
-    html = "<h2>آخر 50 تحليل</h2><table border='1'><tr><th>العملة</th><th>RSI</th><th>MACD</th><th>Signal</th><th>المصدر</th><th>الوقت</th></tr>"
-    for r in results:
-        html += f"<tr><td>{r.symbol}</td><td>{r.rsi if r.rsi else '-'}</td><td>{r.macd if r.macd else '-'}</td><td>{'BUY' if r.signal == 1 else 'SELL'}</td><td>{r.source}</td><td>{r.timestamp}</td></tr>"
-    html += "</table>"
-    return html
+    return render_template("analysis.html", results=results)
 
 @app.route('/logout')
 def logout():

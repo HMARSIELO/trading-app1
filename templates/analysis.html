@@ -2,76 +2,55 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <title>تحليل العملات</title>
+    <title>نتائج التحليل</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="90">
     <style>
-        body {
-            font-family: Arial;
-            background-color: #111;
-            color: white;
-            margin: 0;
-            padding: 20px;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .table-container {
-            overflow-x: auto;
-            width: 100%;
-        }
-
+        body { font-family: Arial; background-color: #111; color: white; padding: 20px; }
+        h2 { text-align: center; margin-bottom: 20px; }
+        .table-container { overflow-x: auto; }
         table {
-            width: 100%;
-            min-width: 600px;
-            border-collapse: collapse;
-            background-color: #222;
-            color: white;
+            width: 100%; min-width: 800px; border-collapse: collapse;
+            background-color: #222; color: white;
         }
-
-        th, td {
-            border: 1px solid #444;
-            padding: 10px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #333;
-        }
-
-        tr:nth-child(even) {
-            background-color: #1a1a1a;
-        }
-
-        @media screen and (max-width: 768px) {
-            table {
-                font-size: 14px;
-            }
-        }
+        th, td { border: 1px solid #444; padding: 10px; text-align: center; }
+        th { background-color: #333; }
+        tr:nth-child(even) { background-color: #1a1a1a; }
     </style>
 </head>
 <body>
-    <h2>نتائج التحليل اللحظي</h2>
+    <h2>📊 آخر 50 تحليل للعملات</h2>
     <div class="table-container">
         <table>
             <thead>
                 <tr>
                     <th>العملة</th>
+                    <th>RSI</th>
+                    <th>MACD</th>
+                    <th>Signal Line</th>
+                    <th>Bollinger Upper</th>
+                    <th>Bollinger Lower</th>
+                    <th>Liquidity</th>
+                    <th>ATR</th>
                     <th>الإشارة</th>
-                    <th>التفاصيل</th>
-                    <th>الأصوات</th>
+                    <th>المصدر</th>
+                    <th>الوقت</th>
                 </tr>
             </thead>
             <tbody>
-                {% for coin, result in data.items() %}
+                {% for r in results %}
                 <tr>
-                    <td>{{ coin }}</td>
-                    <td>{{ result['signal'] }}</td>
-                    <td>{{ result['details'] }}</td>
-                    <td>{{ result['votes'] }}</td>
+                    <td>{{ r.symbol }}</td>
+                    <td>{{ r.rsi or '-' }}</td>
+                    <td>{{ r.macd or '-' }}</td>
+                    <td>{{ r.macd_signal or '-' }}</td>
+                    <td>{{ r.bb_upper or '-' }}</td>
+                    <td>{{ r.bb_lower or '-' }}</td>
+                    <td>{{ r.liquidity or '-' }}</td>
+                    <td>{{ r.atr or '-' }}</td>
+                    <td>{{ 'BUY' if r.signal == 1 else 'SELL' }}</td>
+                    <td>{{ r.source }}</td>
+                    <td>{{ r.timestamp }}</td>
                 </tr>
                 {% endfor %}
             </tbody>

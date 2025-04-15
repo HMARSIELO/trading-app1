@@ -3,7 +3,10 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 from trading_signals import evaluate_coin_multi_timeframe
 from telegram_bot import send_message
 from config import UPDATE_INTERVAL_SECONDS
-from indicators import calculate_atr
+from indicators import (
+    calculate_rsi, calculate_macd, calculate_bollinger,
+    calculate_liquidity, calculate_atr
+)
 from unified_collector import get_combined_market_data
 from coingecko_api import get_top_symbols
 from db import SessionLocal, AnalysisResult
@@ -29,14 +32,16 @@ def scheduled_task():
                     df.columns = ["timestamp", "open", "high", "low", "close", "volume"]
                     latest = df.iloc[-1]
                     entry_price = latest['close']
-                    atr_value = calculate_atr(df, period=14)
 
-                    if atr_value is not None:
-                        stop_loss = entry_price - atr_value * 1.5 if final_signal == "BUY" else entry_price + atr_value * 1.5
-                        take_profit = entry_price + atr_value * 2 if final_signal == "BUY" else entry_price - atr_value * 2
-                    else:
-                        stop_loss = entry_price - 1
-                        take_profit = entry_price + 1
+                    # مؤشرات
+                    rsi = calculate_rsi(df)
+                    macd, signal_line, _ = calculate_macd(df)
+                    bb_upper, _, bb_lower = calculate_bollinger(df)
+                    liquidity = calculate_liquidity(df)
+                    atr = calculate_atr(df)
+
+                    stop_loss = entry_price - atr * 1.5 if final_signal == "BUY" else entry_price + atr * 1.5
+                    take_profit = entry_price + atr * 2 if final_signal == "BUY" else entry_price - atr * 2
 
                     msg = (f"📢 إشارة {final_signal} لـ {coin}\n"
                            f"📊 المصدر: {source}\n"
@@ -50,12 +55,16 @@ def scheduled_task():
                     logging.info(msg)
                     send_message(msg)
 
-                    # ✅ تخزين النتيجة في قاعدة البيانات
                     db = SessionLocal()
                     result = AnalysisResult(
                         symbol=coin,
-                        rsi=None,
-                        macd=None,
+                        rsi=rsi.iloc[-1] if not rsi.empty else None,
+                        macd=macd.iloc[-1] if not macd.empty else None,
+                        macd_signal=signal_line.iloc[-1] if not signal_line.empty else None,
+                        bb_upper=bb_upper.iloc[-1] if not bb_upper.empty else None,
+                        bb_lower=bb_lower.iloc[-1] if not bb_lower.empty else None,
+                        liquidity=liquidity,
+                        atr=atr,
                         signal=1 if final_signal == "BUY" else -1,
                         source=source,
                         timestamp=datetime.utcnow()
@@ -63,7 +72,6 @@ def scheduled_task():
                     db.add(result)
                     db.commit()
                     db.close()
-
         except Exception as e:
             logging.error(f"Error processing {coin}: {e}")
 
