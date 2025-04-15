@@ -1,9 +1,10 @@
 import pandas as pd
 import requests
+from symbol_mapper import symbol_map
 
 def get_coinbase_market_data(symbol, interval, limit=100):
     try:
-        pair = symbol.replace("USDT", "-USD")
+        pair = symbol_map.get(symbol, symbol.replace("USDT", "-USD"))
         granularity = {"1m": 60, "5m": 300, "15m": 900, "1h": 3600}.get(interval, 3600)
         url = f"https://api.pro.coinbase.com/products/{pair}/candles?granularity={granularity}"
         res = requests.get(url, timeout=10)

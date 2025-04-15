@@ -7,8 +7,6 @@ from indicators import (
 )
 from risk_management import calculate_entry_exit
 from logger import logger
-from coingecko_api import get_top_symbols
-
 from machine_learning import load_trade_data, train_model, predict_signal  # 👈 دمج التعلم الآلي
 
 def evaluate_coin(symbol: str, interval: str = "1m"):
@@ -84,7 +82,9 @@ def evaluate_coin_multi_timeframe(symbol: str, intervals: list, weights: dict = 
 
 
 if __name__ == "__main__":
-    symbols = get_top_symbols()
+    # ✳️ العملات التي تريد تحليلها فقط
+    symbols = ["BTCUSDT", "ETHUSDT", "BNBUSDT", "DOGEUSDT"]
+
     for symbol in symbols:
         final, detail, votes = evaluate_coin_multi_timeframe(symbol, ["1m", "5m", "1h"])
         print(f"\nFinal signal for {symbol}: {final}")
