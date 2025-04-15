@@ -10,8 +10,8 @@ TAKE_PROFIT_PERCENTAGE = 0.05        # نسبة أخذ الربح (5%)
 STOP_LOSS_PERCENTAGE = 0.02          # نسبة وقف الخسارة (2%)
 
 # معايير اختيار العملات والإعدادات الزمنية
-TOP_COIN_COUNT = 20                # اختيار أفضل 20 عملة
-UPDATE_INTERVAL_SECONDS = 60       # تحديث البيانات كل 60 ثانية
+TOP_COIN_COUNT = 30                # اختيار أفضل 20 عملة
+UPDATE_INTERVAL_SECONDS = 300      # تحديث البيانات كل 5 دقائق
 
 USERNAME = "HMARSIELO"
 PASSWORD = "Hassan#99"

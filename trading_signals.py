@@ -83,7 +83,14 @@ def evaluate_coin_multi_timeframe(symbol: str, intervals: list, weights: dict = 
 
 if __name__ == "__main__":
     # ✳️ العملات التي تريد تحليلها فقط
-    symbols = ["BTCUSDT", "ETHUSDT", "BNBUSDT", "DOGEUSDT"]
+    symbols =[ "BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT",
+    "DOGEUSDT", "ADAUSDT", "AVAXUSDT", "TONUSDT", "DOTUSDT",
+    "TRXUSDT", "LINKUSDT", "MATICUSDT", "SHIBUSDT", "BCHUSDT",
+    "LTCUSDT", "NEARUSDT", "ICPUSDT", "UNIUSDT", "APTUSDT",
+    "ETCUSDT", "STXUSDT", "IMXUSDT", "INJUSDT", "FILUSDT",
+    "HBARUSDT", "ARBUSDT", "OPUSDT", "RUNEUSDT", "VETUSDT"
+]
+
 
     for symbol in symbols:
         final, detail, votes = evaluate_coin_multi_timeframe(symbol, ["1m", "5m", "1h"])
