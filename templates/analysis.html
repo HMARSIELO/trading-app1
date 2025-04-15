@@ -3,87 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>تحليل العملات</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="90">
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
+        body {
+            font-family: Arial;
             background-color: #111;
-            color: #fff;
-            font-family: Tahoma;
-        }
-        .full-screen-container {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            width: 100vw;
-        }
-        .header {
+            color: white;
+            margin: 0;
             padding: 20px;
-            background-color: #222;
+        }
+
+        h2 {
             text-align: center;
-            font-size: 24px;
-            font-weight: bold;
+            margin-bottom: 20px;
         }
-        .content {
-            flex: 1;
-            overflow: auto;
-            padding: 20px;
-        }
-        .box {
-            background-color: #222;
-            padding: 20px;
-            border-radius: 10px;
+
+        .table-container {
+            overflow-x: auto;
             width: 100%;
         }
+
         table {
             width: 100%;
+            min-width: 600px;
             border-collapse: collapse;
-            margin-top: 20px;
+            background-color: #222;
+            color: white;
         }
+
         th, td {
             border: 1px solid #444;
             padding: 10px;
             text-align: center;
         }
+
         th {
             background-color: #333;
         }
+
+        tr:nth-child(even) {
+            background-color: #1a1a1a;
+        }
+
+        @media screen and (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+        }
     </style>
-    <script>
-        setInterval(() => location.reload(), 60000); // إعادة تحميل الصفحة كل 60 ثانية
-    </script>
 </head>
 <body>
-    <div class="full-screen-container">
-        <div class="header">نتائج التحليل اللحظي</div>
-        <div class="content">
-            <div class="box">
-                <div style="overflow-x: auto;">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>العملة</th>
-                                <th>الإشارة</th>
-                                <th>1m</th>
-                                <th>5m</th>
-                                <th>1h</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>BTCUSDT</td>
-                                <td>BUY</td>
-                                <td>BUY</td>
-                                <td>HOLD</td>
-                                <td>BUY</td>
-                            </tr>
-                            <!-- المزيد من الصفوف -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+    <h2>نتائج التحليل اللحظي</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>العملة</th>
+                    <th>الإشارة</th>
+                    <th>التفاصيل</th>
+                    <th>الأصوات</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for coin, result in data.items() %}
+                <tr>
+                    <td>{{ coin }}</td>
+                    <td>{{ result['signal'] }}</td>
+                    <td>{{ result['details'] }}</td>
+                    <td>{{ result['votes'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
