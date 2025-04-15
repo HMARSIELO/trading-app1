@@ -23,8 +23,5 @@ RUN pip install --no-cache-dir --default-timeout=3000 -r requirements.txt
 # Copy the rest of the application
 COPY . .
 
-# Expose port if needed (optional)
-EXPOSE 8000
-
 # Start the app
 CMD ["python", "main.py"]
