@@ -1,10 +1,10 @@
 from extra_api import get_coinbase_market_data
-from coingecko_api import get_coingecko_market_data
+from coingecko_api import get_top_symbols
 
 def get_combined_market_data(symbol, interval, limit=150):
     sources = [
         (get_coinbase_market_data, "Coinbase"),
-        (get_coingecko_market_data, "CoinGecko"),
+        (get_top_symbols, "CoinGecko"),
     ]
     
     for fetch_func, name in sources:

@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from indicators import calculate_rsi, calculate_macd, calculate_bollinger_bands
+from indicators import calculate_rsi, calculate_macd, calculate_bollinger
 
 def load_historical_data(file_path: str) -> pd.DataFrame:
     """
@@ -26,7 +26,7 @@ def apply_strategy(df: pd.DataFrame) -> pd.DataFrame:
     macd, macd_signal = calculate_macd(df)
     df['MACD'] = macd
     df['MACD_signal'] = macd_signal
-    df['BB_upper'], df['BB_lower'] = calculate_bollinger_bands(df)
+    df['BB_upper'], df['BB_lower'] = calculate_bollinger(df)
     
     # توليد الإشارات: إذا كان RSI أقل من 30 وMACD أكبر من MACD_signal => "BUY"، وإلا "HOLD"
     df['Signal'] = np.where((df['RSI'] < 30) & (df['MACD'] > df['MACD_signal']), "BUY", "HOLD")
