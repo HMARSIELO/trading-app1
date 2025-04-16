@@ -9,6 +9,16 @@ from risk_management import calculate_entry_exit
 from logger import logger
 from machine_learning import load_trade_data, train_model, predict_signal  # 👈 دمج التعلم الآلي
 
+# ✅ متاح للاستيراد من أي ملف آخر
+symbols = [ "BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT",
+    "DOGEUSDT", "ADAUSDT", "AVAXUSDT", "TONUSDT", "DOTUSDT",
+    "TRXUSDT", "LINKUSDT", "MATICUSDT", "SHIBUSDT", "BCHUSDT",
+    "LTCUSDT", "NEARUSDT", "ICPUSDT", "UNIUSDT", "APTUSDT",
+    "ETCUSDT", "STXUSDT", "IMXUSDT", "INJUSDT", "FILUSDT",
+    "HBARUSDT", "ARBUSDT", "OPUSDT", "RUNEUSDT", "VETUSDT"
+]
+
+
 def evaluate_coin(symbol: str, interval: str = "1m"):
     df, source = get_combined_market_data(symbol, interval, symbols)
     if df is None or df.empty:
@@ -96,14 +106,6 @@ def evaluate_coin_multi_timeframe(symbol: str, intervals: list, weights: dict = 
 
 
 if __name__ == "__main__":
-    symbols = [ "BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT",
-        "DOGEUSDT", "ADAUSDT", "AVAXUSDT", "TONUSDT", "DOTUSDT",
-        "TRXUSDT", "LINKUSDT", "MATICUSDT", "SHIBUSDT", "BCHUSDT",
-        "LTCUSDT", "NEARUSDT", "ICPUSDT", "UNIUSDT", "APTUSDT",
-        "ETCUSDT", "STXUSDT", "IMXUSDT", "INJUSDT", "FILUSDT",
-        "HBARUSDT", "ARBUSDT", "OPUSDT", "RUNEUSDT", "VETUSDT"
-    ]
-
     for symbol in symbols:
         final, detail, votes, sl, tp = evaluate_coin_multi_timeframe(symbol, ["1m", "5m", "1h", "4h", "1d"])
         print(f"\n✅ Final signal for {symbol}: {final}")
