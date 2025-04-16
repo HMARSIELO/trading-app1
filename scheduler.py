@@ -7,21 +7,21 @@ from indicators import (
     calculate_rsi, calculate_macd, calculate_bollinger,
     calculate_liquidity, calculate_atr
 )
-from unified_collector import get_combined_market_data
-from coingecko_api import get_top_symbols
+from trading_signals import symbols
 from db import SessionLocal, AnalysisResult
 from datetime import datetime
-
+from unified_collector import get_combined_market_data
 logging.basicConfig(level=logging.INFO)
 
 def scheduled_task():
-    coins = get_top_symbols(limit=50)
+    coins = symbols
+
     if not coins:
         logging.error("لم يتم استرجاع قائمة العملات.")
         return
 
-    intervals = ["1m", "5m", "1h"]
-    weights = {"1m": 1, "5m": 2, "1h": 3}
+    intervals = ["1m", "5m", "1h", "4h", "1d"]
+    weights = {"1m": 1, "5m": 2, "1h": 3, "4h": 4, "1d": 5}
 
     for coin in coins:
         try:

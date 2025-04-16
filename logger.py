@@ -11,5 +11,6 @@ formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 console_handler = logging.StreamHandler()
 console_handler.setFormatter(formatter)
 
-# إضافة الـ handler إلى الـ logger
-logger.addHandler(console_handler)
+# التأكد من عدم تكرار الـ handler
+if not logger.hasHandlers():
+    logger.addHandler(console_handler)
