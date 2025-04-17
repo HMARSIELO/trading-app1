@@ -10,12 +10,17 @@ from logger import logger
 from machine_learning import load_trade_data, train_model, predict_signal  # 👈 دمج التعلم الآلي
 
 # ✅ متاح للاستيراد من أي ملف آخر
-symbols = [ "BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT",
+symbols = [
+    "BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT",
     "DOGEUSDT", "ADAUSDT", "AVAXUSDT", "TONUSDT", "DOTUSDT",
     "TRXUSDT", "LINKUSDT", "MATICUSDT", "SHIBUSDT", "BCHUSDT",
     "LTCUSDT", "NEARUSDT", "ICPUSDT", "UNIUSDT", "APTUSDT",
     "ETCUSDT", "STXUSDT", "IMXUSDT", "INJUSDT", "FILUSDT",
-    "HBARUSDT", "ARBUSDT", "OPUSDT", "RUNEUSDT", "VETUSDT"
+    "HBARUSDT", "ARBUSDT", "OPUSDT", "RUNEUSDT", "XLMUSDT",
+    "ATOMUSDT", "SANDUSDT", "MANAUSDT", "AAVEUSDT", "GRTUSDT",
+    "EOSUSDT", "XTZUSDT", "SNXUSDT", "CRVUSDT", "1INCHUSDT",
+    "ENJUSDT", "ZILUSDT", "BATUSDT", "CHZUSDT", "KSMUSDT",
+    "YFIUSDT", "COMPUSDT", "ZRXUSDT", "ALGOUSDT", "DASHUSDT"
 ]
 
 

@@ -1,4 +1,6 @@
-# CoinGecko ID mapping
+# سنجرب استخدام ids_map وsymbol_map للتحقق من أن جميع الرموز موجودة ولها قيم صالحة.
+
+# القوائم المحدّثة من CoinGecko و Coinbase
 ids_map = {
     "BTCUSDT": "bitcoin",
     "ETHUSDT": "ethereum",
@@ -12,7 +14,7 @@ ids_map = {
     "DOTUSDT": "polkadot",
     "TRXUSDT": "tron",
     "LINKUSDT": "chainlink",
-    "MATICUSDT": "matic-network",
+    "MATICUSDT": "polygon",
     "SHIBUSDT": "shiba-inu",
     "BCHUSDT": "bitcoin-cash",
     "LTCUSDT": "litecoin",
@@ -29,10 +31,29 @@ ids_map = {
     "ARBUSDT": "arbitrum",
     "OPUSDT": "optimism",
     "RUNEUSDT": "thorchain",
-    "VETUSDT": "vechain"
+    "XLMUSDT": "stellar",
+    "ATOMUSDT": "cosmos",
+    "SANDUSDT": "the-sandbox",
+    "MANAUSDT": "decentraland",
+    "AAVEUSDT": "aave",
+    "GRTUSDT": "the-graph",
+    "EOSUSDT": "eos",
+    "XTZUSDT": "tezos",
+    "SNXUSDT": "synthetix-network-token",
+    "CRVUSDT": "curve-dao-token",
+    "1INCHUSDT": "1inch",
+    "ENJUSDT": "enjincoin",
+    "ZILUSDT": "zilliqa",
+    "BATUSDT": "basic-attention-token",
+    "CHZUSDT": "chiliz",
+    "KSMUSDT": "kusama",
+    "YFIUSDT": "yearn-finance",
+    "COMPUSDT": "compound-governance-token",
+    "ZRXUSDT": "0x",
+    "ALGOUSDT": "algorand",
+    "DASHUSDT": "dash"
 }
 
-# Coinbase pair mapping
 symbol_map = {
     "BTCUSDT": "BTC-USD",
     "ETHUSDT": "ETH-USD",
@@ -63,21 +84,44 @@ symbol_map = {
     "ARBUSDT": "ARB-USD",
     "OPUSDT": "OP-USD",
     "RUNEUSDT": "RUNE-USD",
-    "VETUSDT": "VET-USD"
+    "XLMUSDT": "XLM-USD",
+    "ATOMUSDT": "ATOM-USD",
+    "SANDUSDT": "SAND-USD",
+    "MANAUSDT": "MANA-USD",
+    "AAVEUSDT": "AAVE-USD",
+    "GRTUSDT": "GRT-USD",
+    "EOSUSDT": "EOS-USD",
+    "XTZUSDT": "XTZ-USD",
+    "SNXUSDT": "SNX-USD",
+    "CRVUSDT": "CRV-USD",
+    "1INCHUSDT": "1INCH-USD",
+    "ENJUSDT": "ENJ-USD",
+    "ZILUSDT": "ZIL-USD",
+    "BATUSDT": "BAT-USD",
+    "CHZUSDT": "CHZ-USD",
+    "KSMUSDT": "KSM-USD",
+    "YFIUSDT": "YFI-USD",
+    "COMPUSDT": "COMP-USD",
+    "ZRXUSDT": "ZRX-USD",
+    "ALGOUSDT": "ALGO-USD",
+    "DASHUSDT": "DASH-USD"
 }
 
-# دالة موحدة للحصول على معرف CoinGecko ورمز Coinbase
-def get_coin_ids(symbol):
-    if symbol not in ids_map or symbol not in symbol_map:
-        print(f"⚠️ الرمز {symbol} غير موجود في الخرائط.")
-        return None
-    return {
-        "coingecko_id": ids_map[symbol],
-        "coinbase_symbol": symbol_map[symbol]
-    }
+# قائمة الرموز الكاملة التي سيتم التحقق منها
+symbols = list(ids_map.keys())
 
-# مثال على الاستخدام:
-# coin_info = get_coin_ids("BTCUSDT")
-# if coin_info:
-#     print(coin_info["coingecko_id"])     # bitcoin
-#     print(coin_info["coinbase_symbol"])  # BTC-USD
+# الدالة التي تختبر صلاحية الرموز في كلا القاموسين
+def test_symbols(symbols, ids_map, symbol_map):
+    missing_in_ids = []
+    missing_in_symbols = []
+    for symbol in symbols:
+        if symbol not in ids_map:
+            missing_in_ids.append(symbol)
+        if symbol not in symbol_map:
+            missing_in_symbols.append(symbol)
+    return missing_in_ids, missing_in_symbols
+
+# تجربة الرموز
+missing_in_ids, missing_in_symbol_map = test_symbols(symbols, ids_map, symbol_map)
+missing_in_ids, missing_in_symbol_map
+
