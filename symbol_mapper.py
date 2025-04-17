@@ -1,6 +1,6 @@
-# سنجرب استخدام ids_map وsymbol_map للتحقق من أن جميع الرموز موجودة ولها قيم صالحة.
+# symbol_mapper.py
 
-# القوائم المحدّثة من CoinGecko و Coinbase
+# CoinGecko ID Map
 ids_map = {
     "BTCUSDT": "bitcoin",
     "ETHUSDT": "ethereum",
@@ -54,6 +54,7 @@ ids_map = {
     "DASHUSDT": "dash"
 }
 
+# Coinbase Symbol Map
 symbol_map = {
     "BTCUSDT": "BTC-USD",
     "ETHUSDT": "ETH-USD",
@@ -107,21 +108,23 @@ symbol_map = {
     "DASHUSDT": "DASH-USD"
 }
 
-# قائمة الرموز الكاملة التي سيتم التحقق منها
+# الرموز الموحدة
 symbols = list(ids_map.keys())
 
-# الدالة التي تختبر صلاحية الرموز في كلا القاموسين
+# فحص صحة الرموز
 def test_symbols(symbols, ids_map, symbol_map):
-    missing_in_ids = []
-    missing_in_symbols = []
-    for symbol in symbols:
-        if symbol not in ids_map:
-            missing_in_ids.append(symbol)
-        if symbol not in symbol_map:
-            missing_in_symbols.append(symbol)
+    missing_in_ids = [s for s in symbols if s not in ids_map]
+    missing_in_symbols = [s for s in symbols if s not in symbol_map]
     return missing_in_ids, missing_in_symbols
 
-# تجربة الرموز
-missing_in_ids, missing_in_symbol_map = test_symbols(symbols, ids_map, symbol_map)
-missing_in_ids, missing_in_symbol_map
-
+# التحقق التلقائي عند التشغيل
+if __name__ == "__main__":
+    missing_ids, missing_symbols = test_symbols(symbols, ids_map, symbol_map)
+    if missing_ids or missing_symbols:
+        print("❌ رموز مفقودة:")
+        if missing_ids:
+            print("في ids_map:", missing_ids)
+        if missing_symbols:
+            print("في symbol_map:", missing_symbols)
+    else:
+        print("✅ جميع الرموز صحيحة وموجودة.")
