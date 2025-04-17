@@ -4,13 +4,23 @@ from scheduler import scheduled_task
 from db import SessionLocal, AnalysisResult
 import os
 import logging
+from trading_signals import symbols
 
 app = Flask(__name__)
 app.secret_key = "secret_key"
+
+# إعداد وتحسين الجدولة
 scheduler = BackgroundScheduler()
-scheduler.add_job(scheduled_task, 'interval', seconds=300)
+scheduler.add_job(
+    scheduled_task,
+    'interval',
+    seconds=600,
+    max_instances=1,           # لا تكرر التنفيذ إذا لم تنته المهمة السابقة
+    misfire_grace_time=60      # يعطي فرصة 60 ثانية في حال حصل تأخير
+)
 scheduler.start()
 
+# تفعيل نظام السجلات
 logging.basicConfig(level=logging.INFO)
 
 @app.route('/')
@@ -32,12 +42,16 @@ def analysis():
         return redirect(url_for('login_page'))
 
     db = SessionLocal()
-    results = db.query(AnalysisResult).order_by(AnalysisResult.timestamp.desc()).limit(50).all()
-    db.close()
+    with SessionLocal() as db:
+        results = (
+            db.query(AnalysisResult)
+            .filter(AnalysisResult.symbol.in_(symbols))
+            .order_by(AnalysisResult.timestamp.desc())
+            .all()
+        )
 
     return render_template("analysis.html", results=results)
 
-@app.route('/logout')
 def logout():
     session.pop('logged_in', None)
     return redirect(url_for('login_page'))
