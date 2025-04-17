@@ -24,6 +24,6 @@ RUN pip install --no-cache-dir --default-timeout=3000 -r requirements.txt
 COPY . .
 
 # Start the app
-CMD ["gunicorn", "main:app", "-b", "0.0.0.0:8000"]
 
+CMD ["gunicorn", "main:app", "-c", "gunicorn_config.py"]
 
