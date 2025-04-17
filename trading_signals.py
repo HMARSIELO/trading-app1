@@ -12,8 +12,7 @@ from machine_learning import load_trade_data, train_model, predict_signal  # �
 # ✅ متاح للاستيراد من أي ملف آخر
 symbols = [
     "BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT",
-    "DOGEUSDT", "ADAUSDT", "AVAXUSDT", "TONUSDT", "DOTUSDT",
-    "TRXUSDT", "LINKUSDT", "MATICUSDT", "SHIBUSDT", "BCHUSDT",
+    "DOGEUSDT", "ADAUSDT", "DOTUSDT","TRXUSDT", "LINKUSDT", "MATICUSDT", "SHIBUSDT", "BCHUSDT",
     "LTCUSDT", "NEARUSDT", "ICPUSDT", "UNIUSDT", "APTUSDT",
     "ETCUSDT", "STXUSDT", "IMXUSDT", "INJUSDT", "FILUSDT",
     "HBARUSDT", "ARBUSDT", "OPUSDT", "RUNEUSDT", "XLMUSDT",
