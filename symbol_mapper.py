@@ -1,5 +1,3 @@
-# هذا الملف يحتوي على خرائط تحويل الرموز لكل منصة
-
 # CoinGecko ID mapping
 ids_map = {
     "BTCUSDT": "bitcoin",
@@ -67,3 +65,19 @@ symbol_map = {
     "RUNEUSDT": "RUNE-USD",
     "VETUSDT": "VET-USD"
 }
+
+# دالة موحدة للحصول على معرف CoinGecko ورمز Coinbase
+def get_coin_ids(symbol):
+    if symbol not in ids_map or symbol not in symbol_map:
+        print(f"⚠️ الرمز {symbol} غير موجود في الخرائط.")
+        return None
+    return {
+        "coingecko_id": ids_map[symbol],
+        "coinbase_symbol": symbol_map[symbol]
+    }
+
+# مثال على الاستخدام:
+# coin_info = get_coin_ids("BTCUSDT")
+# if coin_info:
+#     print(coin_info["coingecko_id"])     # bitcoin
+#     print(coin_info["coinbase_symbol"])  # BTC-USD
